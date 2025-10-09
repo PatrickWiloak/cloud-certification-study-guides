@@ -35,25 +35,24 @@
    - Practice scenario-based questions
    - One-page cram sheet review
 
-## 📚 Study Resources
+## 📚 Comprehensive Study Resources
 
-### Primary Resources
-- **AWS Training**: [AWS Skill Builder](https://skillbuilder.aws/)
-- **Documentation**: AWS service documentation
-- **Whitepapers**: Well-Architected Framework, security best practices
-- **Practice**: AWS Free Tier hands-on experience
+**👉 [Complete AWS Study Resources Guide](../../.templates/resources-aws.md)**
 
-### Recommended Courses
-- AWS Official SAA-C03 Course
-- A Cloud Guru / Pluralsight courses
-- Udemy courses with high ratings
-- YouTube AWS channels (AWS Official, FreeCodeCamp)
+For detailed information on courses, practice tests, hands-on labs, communities, and more, see our comprehensive AWS study resources guide which includes:
+- AWS Skill Builder free courses and exam prep
+- Top-rated video courses (Stephane Maarek, Adrian Cantrill, etc.)
+- Practice test platforms with pricing (Tutorials Dojo, Whizlabs)
+- AWS Free Tier details and hands-on lab guidance
+- Community forums (r/AWSCertifications) and study groups
+- Essential AWS CLI and tools
+- Pro tips and budget-friendly strategies ($45-85 total)
 
-### Practice Exams
-- AWS Official Practice Exam
-- Tutorials Dojo Practice Tests
-- Whizlabs Practice Tests
-- MeasureUp Practice Tests
+### Quick Links (SAA-C03 Specific)
+- **[SAA-C03 Official Exam Page](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - Registration and exam details
+- **[AWS Skill Builder - SAA-C03 Exam Prep](https://skillbuilder.aws/)** - FREE official exam preparation
+- **[AWS Documentation](https://docs.aws.amazon.com/)** - Complete service documentation
+- **[AWS Free Tier](https://aws.amazon.com/free/)** - 12 months free + always-free services
 
 ## 🧠 Exam Tactics
 
