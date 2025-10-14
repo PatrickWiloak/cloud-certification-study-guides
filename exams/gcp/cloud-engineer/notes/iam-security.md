@@ -1,5 +1,7 @@
 # IAM and Security - Cloud Engineer
 
+**[📖 IAM Overview](https://cloud.google.com/iam/docs/overview)** - Identity and Access Management fundamentals
+
 ## Cloud Identity and Access Management (IAM)
 
 ### Core Concepts
@@ -42,6 +44,9 @@
 - Use for specific requirements
 - Not available for all services
 
+**[📖 Understanding Roles](https://cloud.google.com/iam/docs/understanding-roles)** - IAM roles reference
+**[📖 Custom Roles](https://cloud.google.com/iam/docs/creating-custom-roles)** - Create custom IAM roles
+
 ### Service Accounts
 - Identity for applications/VMs
 - Email format: NAME@PROJECT.iam.gserviceaccount.com
@@ -54,6 +59,9 @@
 - Rotate keys regularly (if using keys)
 - Use Workload Identity for GKE
 - Avoid downloading keys
+
+**[📖 Service Accounts](https://cloud.google.com/iam/docs/service-accounts)** - Service account documentation
+**[📖 Service Account Best Practices](https://cloud.google.com/iam/docs/best-practices-service-accounts)** - Security best practices
 
 **Service Account Keys**:
 - JSON or P12 format
@@ -184,6 +192,9 @@ Organization (policies apply to all)
 - Implement secret rotation
 - Audit secret access
 
+**[📖 Secret Manager](https://cloud.google.com/secret-manager/docs)** - Secure secret storage and management
+**[📖 Secret Manager Best Practices](https://cloud.google.com/secret-manager/docs/best-practices)** - Security recommendations
+
 ## Key Management Service (KMS)
 
 ### Features
@@ -191,6 +202,9 @@ Organization (policies apply to all)
 - Hardware Security Module (HSM) support
 - Automatic key rotation
 - Centralized key management
+
+**[📖 Cloud KMS Documentation](https://cloud.google.com/kms/docs)** - Manage encryption keys
+**[📖 Encryption at Rest](https://cloud.google.com/docs/security/encryption/default-encryption)** - Understanding encryption options
 
 ### Key Types
 - Symmetric: Single key for encrypt/decrypt
@@ -232,6 +246,8 @@ Organization (policies apply to all)
 **Tiers**:
 - Standard: Basic asset discovery (free)
 - Premium: Advanced threat detection, compliance
+
+**[📖 Security Command Center](https://cloud.google.com/security-command-center/docs)** - Centralized security management
 
 ## Binary Authorization
 - Deploy-time security control

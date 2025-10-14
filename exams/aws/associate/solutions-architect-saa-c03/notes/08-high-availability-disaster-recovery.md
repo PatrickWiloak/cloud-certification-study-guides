@@ -1,6 +1,10 @@
 # High Availability and Disaster Recovery - SAA-C03
 
+**[📖 AWS Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)** - Build resilient and highly available systems
+
 ## High Availability Fundamentals
+
+**[📖 AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)** - Regions, Availability Zones, and edge locations
 
 ### Availability Zones (AZs)
 - **Multiple AZs per Region**: Typically 3-6
@@ -40,6 +44,8 @@
 - RPO = 1 hour: Can lose at most 1 hour of data
 
 ## Disaster Recovery Strategies
+
+**[📖 Disaster Recovery Strategies](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)** - Choose the right DR strategy for your workload
 
 ### 1. Backup and Restore (Lowest Cost, Highest RTO/RPO)
 - **RPO**: Hours
@@ -132,6 +138,8 @@
 
 ## Cross-Region Disaster Recovery
 
+**[📖 Cross-Region Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)** - Replicate data across AWS Regions
+
 ### S3 Cross-Region Replication (CRR)
 - **Asynchronous Replication**: Objects to different region
 - **Versioning Required**: Both source and destination
@@ -159,6 +167,8 @@
 - Cross-region network charges apply
 
 ## Backup Strategies
+
+**[📖 AWS Backup Documentation](https://docs.aws.amazon.com/aws-backup/)** - Centralized backup across AWS services
 
 ### AWS Backup
 - **Centralized Backup**: Across AWS services
@@ -190,6 +200,8 @@
 
 ## Auto Scaling for High Availability
 
+**[📖 EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)** - Automatically adjust EC2 capacity
+
 ### Auto Scaling Groups (ASG)
 - **Desired Capacity**: Target number of instances
 - **Minimum**: Never scale below
@@ -211,6 +223,8 @@
 
 ## Route 53 for High Availability
 
+**[📖 Route 53 Health Checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)** - Configure DNS failover
+
 ### Health Checks
 - **Endpoint Monitoring**: HTTP, HTTPS, TCP
 - **Calculated Health Checks**: Combine multiple checks (AND, OR, NOT)
@@ -231,6 +245,8 @@
 - Not a replacement for ELB
 
 ## Resilience Best Practices
+
+**[📖 Resilience Best Practices](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-principles.html)** - Design principles for reliable workloads
 
 ### Design Patterns
 

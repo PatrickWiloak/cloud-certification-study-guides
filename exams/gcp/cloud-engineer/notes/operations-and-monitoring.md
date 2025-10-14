@@ -4,6 +4,8 @@
 
 This document covers Google Cloud operations, monitoring, and logging services including Cloud Monitoring, Cloud Logging, Error Reporting, Cloud Trace, and operational best practices. Managing and monitoring cloud solutions is a key domain for the Associate Cloud Engineer certification.
 
+**[📖 Google Cloud Operations Suite](https://cloud.google.com/products/operations)** - Comprehensive operations and observability
+
 ## Key Topics
 
 ### 1. Cloud Monitoring
@@ -12,11 +14,18 @@ This document covers Google Cloud operations, monitoring, and logging services i
 - Uptime checks and SLO monitoring
 - Custom metrics and monitoring agents
 
+**[📖 Cloud Monitoring Documentation](https://cloud.google.com/monitoring/docs)** - Monitor GCP and AWS resources
+**[📖 Alerting Policies](https://cloud.google.com/monitoring/alerts)** - Create and manage alerts
+
 ### 2. Cloud Logging
 - Centralized log management
 - Log collection, search, and analysis
 - Log exports and sinks
 - Audit logs for security and compliance
+
+**[📖 Cloud Logging Documentation](https://cloud.google.com/logging/docs)** - Store, search, and analyze logs
+**[📖 Logs Explorer](https://cloud.google.com/logging/docs/view/logs-explorer-interface)** - Query and analyze logs
+**[📖 Cloud Audit Logs](https://cloud.google.com/logging/docs/audit)** - Track administrative actions
 
 ### 3. Error Reporting
 - Real-time error tracking and alerting
@@ -24,17 +33,23 @@ This document covers Google Cloud operations, monitoring, and logging services i
 - Integration with applications
 - Stack trace capture and display
 
+**[📖 Error Reporting Documentation](https://cloud.google.com/error-reporting/docs)** - Real-time error monitoring
+
 ### 4. Cloud Trace
 - Distributed tracing for applications
 - Latency analysis and performance insights
 - Request flow visualization
 - Integration with applications and services
 
+**[📖 Cloud Trace Documentation](https://cloud.google.com/trace/docs)** - Distributed tracing system
+
 ### 5. Cloud Profiler
 - Continuous CPU and memory profiling
 - Production environment profiling
 - Performance optimization insights
 - Multiple language support
+
+**[📖 Cloud Profiler Documentation](https://cloud.google.com/profiler/docs)** - Continuous profiling for production
 
 ## GCP Services Reference
 
@@ -87,6 +102,9 @@ This document covers Google Cloud operations, monitoring, and logging services i
 6. **SLO Monitoring**: Define and track service level objectives
 7. **Uptime Checks**: Monitor critical endpoints from multiple locations
 8. **Budget Alerts**: Set up billing alerts to avoid unexpected costs
+
+**[📖 Monitoring Best Practices](https://cloud.google.com/monitoring/docs/best-practices)** - Best practices for monitoring
+**[📖 SLO Monitoring](https://cloud.google.com/stackdriver/docs/solutions/slo-monitoring)** - Service level objective monitoring
 
 ### Cloud Logging Best Practices
 1. **Log Retention**: Configure appropriate retention periods based on compliance needs

@@ -7,6 +7,8 @@ This domain covers preparing application artifacts, testing in development envir
 
 ### AWS CodeCommit
 
+**[📖 AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)** - Secure Git repositories hosted on AWS
+
 #### Git Repository Service
 - **Fully Managed**: No infrastructure to manage
 - **High Availability**: Redundant across multiple AZs
@@ -59,6 +61,8 @@ aws codecommit create-pull-request \
 
 ### AWS CodeBuild
 
+**[📖 AWS CodeBuild User Guide](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)** - Fully managed continuous integration service
+
 #### Build Service Features
 - **Managed Build Environment**: Preconfigured build environments
 - **Custom Docker Images**: Use custom build environments
@@ -68,6 +72,8 @@ aws codecommit create-pull-request \
 - **Environment Variables**: Secure parameter storage
 
 #### buildspec.yml
+
+**[📖 BuildSpec File Reference](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)** - Complete buildspec syntax reference
 ```yaml
 version: 0.2
 
@@ -153,6 +159,8 @@ reports:
 
 ### AWS CodeDeploy
 
+**[📖 AWS CodeDeploy User Guide](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)** - Automate code deployments to maintain application uptime
+
 #### Deployment Platforms
 - **EC2/On-Premises**: Traditional server deployments
 - **Lambda**: Serverless function deployments
@@ -200,6 +208,8 @@ Hooks:
 
 #### Deployment Strategies
 
+**[📖 Deployment Configurations](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html)** - Learn about deployment strategies and configurations
+
 ##### Blue/Green Deployment
 - **Traffic Shifting**: Gradual shift from old to new version
 - **Canary**: 10% traffic, then 100% if successful
@@ -222,6 +232,8 @@ aws deploy create-deployment \
 - **Custom**: Define custom percentage or count
 
 ### AWS CodePipeline
+
+**[📖 AWS CodePipeline User Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)** - Automate continuous delivery pipelines
 
 #### Pipeline Structure
 ```json
@@ -339,6 +351,8 @@ stages:
 
 ## AWS CloudFormation
 
+**[📖 AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)** - Model and provision AWS resources using infrastructure as code
+
 ### Infrastructure as Code
 
 #### CloudFormation Template Structure
@@ -442,6 +456,8 @@ aws cloudformation detect-stack-drift --stack-name my-app-stack
 ```
 
 #### Nested Stacks
+
+**[📖 Nested Stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)** - Create reusable templates with nested stacks
 ```yaml
 Resources:
   NetworkStack:
@@ -461,6 +477,8 @@ Resources:
 ```
 
 ## AWS Elastic Beanstalk
+
+**[📖 AWS Elastic Beanstalk Developer Guide](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)** - Deploy and manage applications without worrying about infrastructure
 
 ### Platform as a Service (PaaS)
 
@@ -585,6 +603,8 @@ aws lambda update-alias \
 
 ### Lambda Deployment with SAM
 
+**[📖 AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)** - Build serverless applications with AWS SAM
+
 #### SAM Template
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
@@ -652,6 +672,8 @@ sam logs -n MyLambdaFunction --tail
 ## Container Deployment
 
 ### Amazon ECS Deployment
+
+**[📖 Amazon ECS Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)** - Run and manage Docker containers on AWS
 
 #### Task Definition
 ```json

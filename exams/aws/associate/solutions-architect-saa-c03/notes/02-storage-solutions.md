@@ -2,7 +2,11 @@
 
 ## Amazon S3 (Simple Storage Service)
 
+**[📖 Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)** - Complete guide to S3 storage and features
+
 ### Storage Classes
+
+**[📖 S3 Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)** - Choose the right storage class for your data access patterns
 - **S3 Standard**: Frequently accessed data, low latency, high throughput
 - **S3 Intelligent-Tiering**: Automatic cost optimization, moves data between tiers
 - **S3 Standard-IA**: Infrequent access, lower cost, retrieval fee
@@ -20,6 +24,8 @@
 - **Multipart Upload**: For objects >100MB, required for >5GB
 - **S3 Select**: Query data with SQL without retrieving entire object
 
+**[📖 S3 Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)** - Automatically replicate objects across AWS Regions
+
 ### Security
 - **Bucket Policies**: Resource-based policies (JSON)
 - **Access Control Lists (ACLs)**: Legacy access control
@@ -30,6 +36,8 @@
   - SSE-C: Customer-provided keys
 - **Encryption in Transit**: HTTPS/TLS
 
+**[📖 S3 Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)** - Implement security controls for S3 buckets and objects
+
 ### Performance Optimization
 - **S3 Prefixes**: 3,500 PUT/COPY/POST/DELETE, 5,500 GET/HEAD per prefix
 - **Multipart Upload**: Parallel uploads for large files
@@ -38,7 +46,11 @@
 
 ## Amazon EBS (Elastic Block Store)
 
+**[📖 Amazon EBS Documentation](https://docs.aws.amazon.com/ebs/index.html)** - Block storage for EC2 instances
+
 ### Volume Types
+
+**[📖 EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)** - Choose the right EBS volume for your workload
 **SSD-Based (IOPS-focused)**:
 - **gp3 (General Purpose SSD)**: 3,000-16,000 IOPS, 125-1,000 MB/s throughput
 - **gp2 (General Purpose SSD)**: Baseline 3 IOPS/GB, burst to 3,000 IOPS
@@ -58,6 +70,8 @@
 - **Encryption**: At rest and in transit, uses KMS
 - **EBS-Optimized Instances**: Dedicated bandwidth for EBS
 
+**[📖 EBS Snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)** - Back up your EBS volumes with snapshots
+
 ### Best Practices
 - Use gp3 for most workloads (cheaper than gp2)
 - io2 for databases requiring high IOPS
@@ -66,6 +80,8 @@
 - Enable encryption by default
 
 ## Amazon EFS (Elastic File System)
+
+**[📖 Amazon EFS Documentation](https://docs.aws.amazon.com/efs/index.html)** - Scalable, elastic file storage for Linux workloads
 
 ### Features
 - **Network File System (NFS)**: POSIX-compliant, shared storage
@@ -95,11 +111,15 @@
 
 ## Amazon FSx
 
+**[📖 Amazon FSx Documentation](https://docs.aws.amazon.com/fsx/)** - Fully managed file systems built on popular file systems
+
 ### FSx for Windows File Server
 - **SMB Protocol**: Windows native file system
 - **Active Directory Integration**: Windows authentication
 - **Performance**: Up to 2 GB/s throughput, millions of IOPS
 - **Use Cases**: Windows applications, home directories, SQL Server
+
+**[📖 FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)** - Fully managed Windows file storage
 
 ### FSx for Lustre
 - **High Performance**: Machine learning, HPC, video processing
@@ -108,6 +128,8 @@
 - **Deployment Types**:
   - Scratch: Temporary, 200 MB/s per TiB
   - Persistent: Long-term, 50/100/200 MB/s per TiB
+
+**[📖 FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html)** - High-performance file system for compute-intensive workloads
 
 ### FSx for NetApp ONTAP
 - **NFS and SMB**: Multi-protocol support
@@ -120,6 +142,8 @@
 - **Use Cases**: Linux workloads, databases
 
 ## AWS Storage Gateway
+
+**[📖 AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/)** - Hybrid cloud storage integration
 
 ### Gateway Types
 
@@ -148,6 +172,8 @@
 - Deploy gateway on-premises or in EC2
 
 ## AWS DataSync
+
+**[📖 AWS DataSync](https://docs.aws.amazon.com/datasync/)** - Automated data transfer between on-premises and AWS
 
 ### Features
 - **Fast Transfer**: 10x faster than open-source tools

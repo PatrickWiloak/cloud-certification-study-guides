@@ -4,6 +4,8 @@
 
 This document covers Google Cloud networking and security fundamentals including VPC networks, firewall rules, load balancing, IAM, and security best practices. Understanding networking and security is critical for the Associate Cloud Engineer certification.
 
+**[📖 Networking Overview](https://cloud.google.com/vpc/docs)** - Google Cloud Virtual Private Cloud networking
+
 ## Key Topics
 
 ### 1. Virtual Private Cloud (VPC)
@@ -12,11 +14,17 @@ This document covers Google Cloud networking and security fundamentals including
 - VPC peering and Shared VPC
 - Private Google Access and Private Service Connect
 
+**[📖 VPC Networks](https://cloud.google.com/vpc/docs/vpc)** - Virtual Private Cloud networks
+**[📖 Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)** - Control traffic to and from instances
+
 ### 2. Load Balancing
 - Global and regional load balancers
 - HTTP(S), TCP, and UDP load balancing
 - Internal and external load balancing
 - Health checks and backend services
+
+**[📖 Load Balancing](https://cloud.google.com/load-balancing/docs)** - Distribute traffic across resources
+**[📖 Choosing a Load Balancer](https://cloud.google.com/load-balancing/docs/choosing-load-balancer)** - Select the right load balancer
 
 ### 3. Cloud IAM
 - Identity and Access Management
@@ -24,17 +32,26 @@ This document covers Google Cloud networking and security fundamentals including
 - Roles and permissions
 - Policy hierarchy and inheritance
 
+**[📖 IAM Documentation](https://cloud.google.com/iam/docs)** - Identity and Access Management
+**[📖 IAM Roles](https://cloud.google.com/iam/docs/understanding-roles)** - Predefined and custom roles
+
 ### 4. Network Security
 - Firewall rules and priorities
 - Cloud Armor for DDoS protection
 - VPN and Cloud Interconnect
 - Security best practices
 
+**[📖 Cloud Armor](https://cloud.google.com/armor/docs)** - DDoS protection and WAF
+**[📖 Cloud VPN](https://cloud.google.com/network-connectivity/docs/vpn)** - Secure VPN connectivity
+
 ### 5. Hybrid Connectivity
 - Cloud VPN for encrypted connectivity
 - Cloud Interconnect for dedicated connections
 - Cloud Router for dynamic routing
 - Hybrid networking patterns
+
+**[📖 Cloud Interconnect](https://cloud.google.com/network-connectivity/docs/interconnect)** - Dedicated private connections
+**[📖 Hybrid Connectivity](https://cloud.google.com/architecture/hybrid-and-multi-cloud-network-topologies)** - Network topology patterns
 
 ## GCP Services Reference
 
@@ -83,6 +100,9 @@ This document covers Google Cloud networking and security fundamentals including
 6. **Private Google Access**: Enable for instances without external IPs
 7. **VPC Flow Logs**: Enable for network monitoring and troubleshooting
 8. **Cloud NAT**: Use for secure outbound internet access
+
+**[📖 VPC Best Practices](https://cloud.google.com/vpc/docs/best-practices)** - VPC network design best practices
+**[📖 Shared VPC](https://cloud.google.com/vpc/docs/shared-vpc)** - Centralized network management
 
 ### Firewall Rules Best Practices
 1. **Deny-All Default**: Start with deny-all and explicitly allow required traffic

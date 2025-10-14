@@ -1,5 +1,7 @@
 # Google Kubernetes Engine (GKE) and Containers - Cloud Engineer
 
+**[📖 GKE Overview](https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview)** - Introduction to Google Kubernetes Engine
+
 ## Google Kubernetes Engine (GKE)
 
 ### Cluster Types
@@ -16,6 +18,9 @@
 - Pod-based pricing (no node charges)
 - Optimized configuration
 - Best for most use cases
+
+**[📖 GKE Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview)** - Fully managed Kubernetes
+**[📖 Standard vs Autopilot](https://cloud.google.com/kubernetes-engine/docs/resources/autopilot-standard-feature-comparison)** - Feature comparison
 
 ### Cluster Architecture
 
@@ -82,6 +87,8 @@
 - No need for service account keys
 - Best practice for pod authentication
 
+**[📖 Workload Identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)** - Configure Workload Identity for GKE
+
 ### Auto-Scaling
 
 **Cluster Autoscaler**:
@@ -141,6 +148,9 @@
 - IAM integration
 - Encryption at rest
 
+**[📖 Artifact Registry](https://cloud.google.com/artifact-registry/docs)** - Store and manage container images
+**[📖 Vulnerability Scanning](https://cloud.google.com/artifact-registry/docs/analysis)** - Container vulnerability analysis
+
 ### Container Registry (Legacy)
 - Docker-only
 - Storage in Cloud Storage buckets
@@ -161,6 +171,9 @@
 - Auto-scaling to zero
 - Pay per use (CPU and memory)
 - HTTPS endpoints automatically
+
+**[📖 Cloud Run Documentation](https://cloud.google.com/run/docs)** - Deploy serverless containers
+**[📖 Cloud Run Quickstart](https://cloud.google.com/run/docs/quickstarts)** - Get started with Cloud Run
 
 ### Deployment
 - Container images from Artifact Registry or Container Registry
@@ -191,6 +204,9 @@
 - Build, test, deploy containers
 - Native Docker and Buildpacks support
 - Integration with GitHub, Bitbucket, Cloud Source Repositories
+
+**[📖 Cloud Build Documentation](https://cloud.google.com/build/docs)** - Continuous integration and delivery
+**[📖 Build Configuration](https://cloud.google.com/build/docs/build-config-file-schema)** - cloudbuild.yaml reference
 
 ### Build Configuration
 - cloudbuild.yaml or JSON

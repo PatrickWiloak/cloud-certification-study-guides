@@ -1,6 +1,10 @@
 # AZ-104 Exam Tips and Best Practices - AZ-104
 
+**[📖 Exam AZ-104: Microsoft Azure Administrator](https://learn.microsoft.com/en-us/certifications/exams/az-104/)** - Official exam page with requirements and skills measured
+
 ## Exam Format
+
+**[📖 Skills Measured](https://learn.microsoft.com/en-us/certifications/resources/study-guides/az-104)** - Detailed exam objectives and study guide
 - **Duration**: 180 minutes (3 hours)
 - **Questions**: 40-60
 - **Passing Score**: 700/1000
@@ -8,6 +12,8 @@
 - **Cost**: $165 USD
 
 ## Question Types
+
+**[📖 Exam Duration and Question Types](https://learn.microsoft.com/en-us/certifications/exam-duration-question-types)** - Understand Microsoft certification exam formats
 
 **Multiple Choice**: One correct answer
 **Multiple Select**: 2+ correct answers  
@@ -103,6 +109,10 @@ az vm delete
 
 ## Hands-On Skills Required
 
+**[📖 Azure Free Account](https://azure.microsoft.com/en-us/free/)** - Get hands-on practice with free Azure credits
+
+**[📖 Microsoft Learn Training](https://learn.microsoft.com/en-us/certifications/azure-administrator/)** - Free official training paths for AZ-104
+
 **Portal Tasks**:
 - Create and configure VMs
 - Set up VNets and subnets
@@ -128,6 +138,10 @@ az vm delete
 
 ## Study Strategy
 
+**[📖 Azure Documentation](https://learn.microsoft.com/en-us/azure/)** - Comprehensive Azure documentation and tutorials
+
+**[📖 Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)** - Best practices and reference architectures
+
 ### Week Before
 - Practice exams (aim for 80%+)
 - Review weak areas
@@ -146,6 +160,12 @@ az vm delete
 - Review flagged questions
 
 ## Key Topics by Weight
+
+**[📖 Exam Sandbox](https://aka.ms/examdemo)** - Practice with the Microsoft exam interface
+
+**[📖 Azure CLI Documentation](https://learn.microsoft.com/en-us/cli/azure/)** - Command-line interface for Azure
+
+**[📖 Azure PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/azure/)** - PowerShell module for Azure
 
 **15-20%: Identity and Governance**
 - Azure AD users, groups

@@ -2,6 +2,8 @@
 
 ## Amazon RDS (Relational Database Service)
 
+**[📖 Amazon RDS Documentation](https://docs.aws.amazon.com/rds/)** - Managed relational database service for the cloud
+
 ### Supported Engines
 - **Amazon Aurora**: MySQL and PostgreSQL compatible
 - **MySQL**: Open-source relational database
@@ -16,6 +18,8 @@
 - **Multi-AZ**: Synchronous replication to standby in different AZ
 - **Automatic Failover**: 1-2 minutes, no manual intervention
 - **Use Case**: Production databases requiring high availability
+
+**[📖 RDS Multi-AZ Deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)** - High availability with automatic failover
 
 **Read Scalability**:
 - **Read Replicas**: Asynchronous replication
@@ -43,6 +47,8 @@
 
 ## Amazon Aurora
 
+**[📖 Amazon Aurora Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)** - High-performance managed relational database
+
 ### Architecture
 - **Storage**: 6 copies across 3 AZs, self-healing
 - **Cluster**: 1 master + up to 15 read replicas
@@ -65,6 +71,8 @@
 - <1 second replication lag
 - <1 minute RTO (recovery time objective)
 
+**[📖 Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)** - Deploy Aurora across multiple AWS Regions
+
 **Aurora Multi-Master**:
 - Multiple write nodes
 - Continuous availability
@@ -83,11 +91,15 @@
 
 ## Amazon DynamoDB
 
+**[📖 Amazon DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)** - Fully managed NoSQL database service
+
 ### Core Concepts
 - **Tables**: Collection of items
 - **Items**: Collection of attributes (rows)
 - **Attributes**: Key-value pairs (columns)
 - **Primary Key**: Partition key (required) + optional sort key
+
+**[📖 DynamoDB Core Components](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)** - Understanding tables, items, and attributes
 
 ### Capacity Modes
 
@@ -112,10 +124,14 @@
 - Write-through caching
 - No application code changes
 
+**[📖 DynamoDB Accelerator (DAX)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)** - In-memory cache for DynamoDB
+
 **Global Tables**:
 - Multi-region, multi-active replication
 - <1 second replication lag
 - Disaster recovery and low latency
+
+**[📖 DynamoDB Global Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)** - Multi-region, fully replicated tables
 
 **Streams**:
 - Ordered record of item changes
@@ -140,6 +156,8 @@
 - Avoid hot partitions
 
 ## Amazon ElastiCache
+
+**[📖 Amazon ElastiCache Documentation](https://docs.aws.amazon.com/elasticache/)** - In-memory caching service
 
 ### Redis vs Memcached
 
@@ -177,6 +195,8 @@
 - **TTL (Time to Live)**: Expire old data
 
 ## Amazon Redshift
+
+**[📖 Amazon Redshift Documentation](https://docs.aws.amazon.com/redshift/)** - Fast, fully managed data warehouse
 
 ### Architecture
 - **Data Warehouse**: Columnar storage, OLAP

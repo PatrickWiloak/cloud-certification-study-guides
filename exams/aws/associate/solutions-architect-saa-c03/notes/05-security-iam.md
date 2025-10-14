@@ -2,7 +2,11 @@
 
 ## IAM (Identity and Access Management)
 
+**[📖 AWS IAM Documentation](https://docs.aws.amazon.com/iam/)** - Securely control access to AWS services and resources
+
 ### Core Components
+
+**[📖 IAM Identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)** - Users, groups, and roles in IAM
 
 **Users**: Individual people or applications
 - Long-term credentials (password, access keys)
@@ -27,6 +31,9 @@
 - AWS managed, customer managed, inline
 
 ### Policy Structure
+
+**[📖 IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)** - Control access with policies
+
 ```json
 {
   "Version": "2012-10-17",
@@ -75,11 +82,15 @@
 
 ## AWS Organizations
 
+**[📖 AWS Organizations Documentation](https://docs.aws.amazon.com/organizations/)** - Centrally manage multiple AWS accounts
+
 ### Features
 - **Consolidated Billing**: Single payment for all accounts
 - **Volume Discounts**: Aggregated usage
 - **OU (Organizational Units)**: Hierarchical account grouping
 - **Service Control Policies (SCPs)**: Permission boundaries
+
+**[📖 Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)** - Set permission guardrails across accounts
 
 ### Service Control Policies (SCPs)
 - **Allowlist**: Explicitly allow services (default deny all)
@@ -125,6 +136,8 @@
 
 ## Encryption
 
+**[📖 Encryption in AWS](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/encryption-in-aws.html)** - Data protection at rest and in transit
+
 ### Encryption at Rest
 
 **S3 Encryption**:
@@ -150,6 +163,8 @@
 - **Direct Connect**: MACsec (layer 2) or VPN over DX
 
 ### AWS KMS (Key Management Service)
+
+**[📖 AWS KMS Documentation](https://docs.aws.amazon.com/kms/)** - Managed encryption key creation and control
 
 **Customer Master Keys (CMKs)**:
 - **AWS Managed**: Free, rotated automatically every year
@@ -197,6 +212,8 @@
 
 ## AWS Secrets Manager
 
+**[📖 AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/)** - Rotate, manage, and retrieve secrets throughout their lifecycle
+
 ### Features
 - Store secrets (passwords, API keys, database credentials)
 - Automatic rotation (Lambda integration)
@@ -215,12 +232,16 @@
 
 ## AWS Security Services
 
+**[📖 AWS Security Services](https://docs.aws.amazon.com/security/)** - Comprehensive security solutions
+
 ### Amazon GuardDuty
 - Intelligent threat detection
 - Analyzes VPC Flow Logs, DNS logs, CloudTrail events
 - Machine learning for anomaly detection
 - CryptoCurrency mining detection
 - Use Case: Continuous security monitoring
+
+**[📖 Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/)** - Intelligent threat detection service
 
 ### AWS Security Hub
 - Central security dashboard
@@ -248,6 +269,8 @@
 - Rules: IP addresses, HTTP headers, body, URI strings
 - Rate-based rules: DDoS protection
 - Managed Rules: AWS and third-party rulesets
+
+**[📖 AWS WAF](https://docs.aws.amazon.com/waf/)** - Protect web applications from common exploits
 
 ### AWS Shield
 - **Shield Standard**: Free, DDoS protection for all AWS customers

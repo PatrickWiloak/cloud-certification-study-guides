@@ -10,6 +10,8 @@ This certification is no longer available for new candidates. If you hold this c
 
 AWS has launched the **AWS Certified Data Engineer - Associate** certification as a replacement, which became available on March 12, 2024.
 
+**[📖 AWS Data Engineer - Associate](https://aws.amazon.com/certification/certified-data-engineer-associate/)** - Official certification page
+
 ### Key Differences
 - **Level**: Associate (vs. Specialty for DBS-C01)
 - **Broader Scope**: Covers data engineering beyond just databases
@@ -100,29 +102,46 @@ If you currently hold the DBS-C01 certification:
 
 ### Relational Databases
 - **Amazon RDS**: Managed relational database service
+  - **[📖 RDS Documentation](https://docs.aws.amazon.com/rds/)** - Complete RDS guide
+  - **[📖 RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/)** - Getting started with RDS
 - **Amazon Aurora**: High-performance MySQL/PostgreSQL-compatible
+  - **[📖 Aurora Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/)** - Aurora user guide
 - **Amazon Aurora Serverless**: On-demand autoscaling RDS
+  - **[📖 Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)** - Serverless scaling
 
 ### NoSQL Databases
 - **Amazon DynamoDB**: Fast, flexible NoSQL database
+  - **[📖 DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)** - DynamoDB developer guide
 - **Amazon DocumentDB**: MongoDB-compatible
+  - **[📖 DocumentDB Documentation](https://docs.aws.amazon.com/documentdb/)** - MongoDB-compatible database guide
 - **Amazon Keyspaces**: Apache Cassandra-compatible
+  - **[📖 Keyspaces Documentation](https://docs.aws.amazon.com/keyspaces/)** - Cassandra-compatible service
 
 ### Specialized Databases
 - **Amazon Neptune**: Graph database for connected data
+  - **[📖 Neptune Documentation](https://docs.aws.amazon.com/neptune/)** - Graph database guide
 - **Amazon QLDB**: Ledger database for immutable history
+  - **[📖 QLDB Documentation](https://docs.aws.amazon.com/qldb/)** - Quantum ledger database
 - **Amazon Timestream**: Time series database
+  - **[📖 Timestream Documentation](https://docs.aws.amazon.com/timestream/)** - Time series data management
 - **Amazon MemoryDB for Redis**: Redis-compatible in-memory database
+  - **[📖 MemoryDB Documentation](https://docs.aws.amazon.com/memorydb/)** - Durable in-memory database
 - **Amazon ElastiCache**: In-memory caching (Redis, Memcached)
+  - **[📖 ElastiCache Documentation](https://docs.aws.amazon.com/elasticache/)** - Caching service guide
 
 ### Data Warehousing and Analytics
 - **Amazon Redshift**: Cloud data warehouse
+  - **[📖 Redshift Documentation](https://docs.aws.amazon.com/redshift/)** - Data warehouse guide
 - **Amazon Redshift Serverless**: Serverless data warehousing
+  - **[📖 Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html)** - Serverless data warehouse
 - **Amazon Athena**: Serverless SQL query service
+  - **[📖 Athena Documentation](https://docs.aws.amazon.com/athena/)** - Query S3 data with SQL
 
 ### Migration Services
 - **AWS Database Migration Service (DMS)**: Migrate databases to AWS
+  - **[📖 DMS Documentation](https://docs.aws.amazon.com/dms/)** - Database migration guide
 - **AWS Schema Conversion Tool (SCT)**: Convert database schemas
+  - **[📖 SCT Documentation](https://docs.aws.amazon.com/SchemaConversionTool/)** - Schema conversion guide
 
 ## Resources for Database Professionals on AWS
 

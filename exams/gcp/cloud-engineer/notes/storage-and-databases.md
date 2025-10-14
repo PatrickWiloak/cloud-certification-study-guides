@@ -4,6 +4,8 @@
 
 This document covers Google Cloud storage and database services including Cloud Storage, Cloud SQL, Cloud Firestore, Cloud Bigtable, and BigQuery. Understanding storage options and database selection is essential for the Associate Cloud Engineer certification.
 
+**[📖 Storage Products Overview](https://cloud.google.com/products/storage)** - Complete guide to Google Cloud storage options
+
 ## Key Topics
 
 ### 1. Cloud Storage
@@ -12,11 +14,17 @@ This document covers Google Cloud storage and database services including Cloud 
 - Lifecycle management and versioning
 - Access control and security
 
+**[📖 Cloud Storage Documentation](https://cloud.google.com/storage/docs)** - Object storage for companies of all sizes
+**[📖 Storage Classes](https://cloud.google.com/storage/docs/storage-classes)** - Choose the right storage class for your data
+
 ### 2. Cloud SQL
 - Fully managed relational databases (MySQL, PostgreSQL, SQL Server)
 - High availability and automatic backups
 - Read replicas for scaling read operations
 - Point-in-time recovery
+
+**[📖 Cloud SQL Documentation](https://cloud.google.com/sql/docs)** - Fully managed relational database service
+**[📖 High Availability](https://cloud.google.com/sql/docs/mysql/high-availability)** - Configure HA for Cloud SQL instances
 
 ### 3. Cloud Firestore
 - NoSQL document database
@@ -24,17 +32,25 @@ This document covers Google Cloud storage and database services including Cloud 
 - Mobile and web client libraries
 - Automatic scaling and multi-region replication
 
+**[📖 Firestore Documentation](https://cloud.google.com/firestore/docs)** - Scalable NoSQL document database
+
 ### 4. Cloud Bigtable
 - Wide-column NoSQL database
 - High-throughput, low-latency workloads
 - Scales to billions of rows
 - Integration with big data tools
 
+**[📖 Bigtable Documentation](https://cloud.google.com/bigtable/docs)** - Petabyte-scale NoSQL database service
+**[📖 Schema Design](https://cloud.google.com/bigtable/docs/schema-design)** - Best practices for Bigtable schema design
+
 ### 5. BigQuery
 - Serverless data warehouse
 - SQL interface for analytics
 - Petabyte-scale data analysis
 - Machine learning capabilities
+
+**[📖 BigQuery Documentation](https://cloud.google.com/bigquery/docs)** - Serverless, highly scalable data warehouse
+**[📖 Query Optimization](https://cloud.google.com/bigquery/docs/best-practices-performance-overview)** - Best practices for query performance
 
 ## GCP Services Reference
 
@@ -94,6 +110,9 @@ This document covers Google Cloud storage and database services including Cloud 
 7. **Retention Policies**: Prevent accidental deletion of critical data
 8. **Transfer Optimization**: Use gsutil for large transfers with parallelism
 
+**[📖 Lifecycle Management](https://cloud.google.com/storage/docs/lifecycle)** - Automate object lifecycle management
+**[📖 Access Control](https://cloud.google.com/storage/docs/access-control)** - IAM and ACLs for Cloud Storage
+
 ### Cloud SQL Best Practices
 1. **High Availability**: Enable for production workloads
 2. **Automated Backups**: Configure daily backups with appropriate retention
@@ -133,6 +152,9 @@ This document covers Google Cloud storage and database services including Cloud 
 6. **Table Expiration**: Set expiration for temporary tables
 7. **Materialized Views**: Use for frequently accessed aggregations
 8. **Streaming Inserts**: Use for real-time data, understand cost implications
+
+**[📖 Partitioned Tables](https://cloud.google.com/bigquery/docs/partitioned-tables)** - Improve query performance and reduce costs
+**[📖 Cost Controls](https://cloud.google.com/bigquery/docs/best-practices-costs)** - Best practices for controlling costs
 
 ## Common Scenarios
 

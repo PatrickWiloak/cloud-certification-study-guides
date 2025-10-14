@@ -1,6 +1,10 @@
 # SAA-C03 Exam Tips and Best Practices
 
+**[📖 AWS Certification Exam Guide](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - Official SAA-C03 exam information
+
 ## Exam Format and Strategy
+
+**[📖 Exam Preparation Guide](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)** - Download the official exam guide
 
 ### Exam Details
 - **Duration**: 130 minutes (2 hours 10 minutes)
@@ -192,12 +196,16 @@ ACID transactions + Joins?
 
 ## Well-Architected Framework Pillars
 
+**[📖 AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)** - Best practices for building on AWS
+
 ### Operational Excellence
 - Infrastructure as Code (CloudFormation)
 - Automated deployments (CodePipeline)
 - Small, frequent changes
 - Learn from failures
 - CloudWatch for monitoring
+
+**[📖 Operational Excellence Pillar](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html)** - Run and monitor systems
 
 ### Security
 - IAM for identity and access
@@ -206,6 +214,8 @@ ACID transactions + Joins?
 - Data protection (encryption, backups)
 - Incident response procedures
 
+**[📖 Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)** - Protect information and systems
+
 ### Reliability
 - Automatic recovery from failure
 - Test recovery procedures
@@ -213,12 +223,16 @@ ACID transactions + Joins?
 - Stop guessing capacity (Auto Scaling)
 - Manage change through automation
 
+**[📖 Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)** - Recover from failures and meet demand
+
 ### Performance Efficiency
 - Use advanced technologies (serverless, ML)
 - Go global in minutes (CloudFront, Global Accelerator)
 - Use serverless architectures
 - Experiment more often
 - Mechanical sympathy (right tools for the job)
+
+**[📖 Performance Efficiency Pillar](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html)** - Use resources efficiently
 
 ### Cost Optimization
 - Implement Cloud Financial Management
@@ -234,6 +248,8 @@ ACID transactions + Joins?
 - Anticipate and adopt new, more efficient offerings
 - Use managed services
 - Reduce downstream impact
+
+**[📖 Sustainability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)** - Minimize environmental impact
 
 ## Common Mistakes to Avoid
 
@@ -317,6 +333,8 @@ ACID transactions + Joins?
 
 ## Final Tips
 
+**[📖 AWS Training and Certification](https://aws.amazon.com/training/)** - Additional learning resources
+
 1. **Trust your preparation**: Don't second-guess too much
 2. **AWS wants you to pass**: Questions are fair, not trick questions
 3. **Manage time**: Don't spend too long on any question
@@ -329,5 +347,7 @@ ACID transactions + Joins?
 10. **When in doubt**: Choose the most AWS-native, managed service option
 
 **Remember**: You need 720/1000 (72%) to pass. You don't need perfection!
+
+**[📖 AWS Certification FAQs](https://aws.amazon.com/certification/faqs/)** - Common questions about AWS certification
 
 Good luck on your SAA-C03 exam!

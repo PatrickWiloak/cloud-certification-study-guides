@@ -1,6 +1,10 @@
 # Amazon EC2 Fundamentals for Solutions Architects
 
+**[📖 EC2 User Guide](https://docs.aws.amazon.com/ec2/index.html)** - Complete EC2 documentation and best practices
+
 ## Instance Types and Selection
+
+**[📖 EC2 Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)** - Detailed guide to choosing the right instance type for your workload
 
 ### General Purpose Instances
 
@@ -10,6 +14,8 @@
 - **CPU Credits**: Accumulate credits when below baseline, consume when bursting
 - **Unlimited Mode**: T3/T4g can burst beyond credits for additional cost
 - **Sizing Strategy**: Monitor CPU credit balance and utilization patterns
+
+**[📖 Burstable Performance Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html)** - Understanding CPU credits and burstable performance
 
 **T4g vs T3 vs T2**:
 - T4g: ARM-based Graviton2 processors, 20% better price/performance
@@ -97,6 +103,8 @@
 
 ## Placement Groups
 
+**[📖 Placement Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)** - Strategies for grouping instances to meet workload needs
+
 ### Cluster Placement Groups
 - **Purpose**: Low latency, high network performance between instances
 - **Use Cases**: HPC applications, tightly coupled workloads
@@ -116,6 +124,8 @@
 - **Isolation**: Each instance on separate underlying hardware
 
 ## Instance Purchasing Options
+
+**[📖 EC2 Pricing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html)** - Understanding different EC2 pricing models
 
 ### On-Demand Instances
 - **Billing**: Pay by the hour or second (minimum 60 seconds)
@@ -151,6 +161,8 @@
   - Use multiple instance types and AZs
   - Set appropriate maximum price
 
+**[📖 Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)** - Maximize savings with EC2 Spot Instances
+
 **Ideal Workloads for Spot**:
 - Batch processing jobs
 - Data analysis and processing
@@ -171,6 +183,8 @@
 - **Management**: More control over instance placement
 
 ## Auto Scaling Strategies
+
+**[📖 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)** - Maintain application availability with EC2 Auto Scaling
 
 ### Auto Scaling Groups (ASG)
 
@@ -227,6 +241,8 @@
 
 ## Security Best Practices
 
+**[📖 EC2 Security](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html)** - Best practices for securing your EC2 instances
+
 ### Security Groups
 - **Stateful**: Return traffic automatically allowed
 - **Default Behavior**: Deny all inbound, allow all outbound
@@ -236,11 +252,15 @@
   - Regular review and cleanup
   - Use security group references instead of IP addresses
 
+**[📖 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)** - Control traffic to your instances with security groups
+
 ### IAM Roles for EC2
 - **Instance Profiles**: Attach IAM roles to EC2 instances
 - **Benefits**: No need to store credentials on instances
 - **Automatic Rotation**: Credentials automatically rotated
 - **Best Practice**: Always use IAM roles instead of access keys
+
+**[📖 IAM Roles for EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)** - Grant AWS permissions to applications running on EC2
 
 ### Key Pairs
 - **SSH Access**: Use key pairs for Linux instances
@@ -258,6 +278,8 @@
 - **Encryption**: Use encryption in transit and at rest
 
 ## Performance Optimization
+
+**[📖 Enhanced Networking](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html)** - Enable high network performance for supported instance types
 
 ### Instance Optimization
 - **Enhanced Networking**: Enable for supported instance types

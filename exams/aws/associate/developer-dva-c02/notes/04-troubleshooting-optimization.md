@@ -5,6 +5,8 @@ This domain covers assisting in root cause analysis, instrumenting code for obse
 
 ## Amazon CloudWatch
 
+**[📖 Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)** - Monitor AWS resources and applications in real-time
+
 ### CloudWatch Metrics
 
 #### Standard Metrics
@@ -15,6 +17,8 @@ This domain covers assisting in root cause analysis, instrumenting code for obse
 - **SQS**: ApproximateNumberOfMessagesVisible, ApproximateAgeOfOldestMessage
 
 #### Custom Metrics
+
+**[📖 Publishing Custom Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)** - Publish your own metrics to CloudWatch
 ```python
 import boto3
 from datetime import datetime
@@ -66,6 +70,8 @@ cloudwatch.put_metric_data(
 ```
 
 ### CloudWatch Logs
+
+**[📖 CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)** - Monitor, store, and access log files from AWS resources
 
 #### Log Groups and Streams
 ```python
@@ -139,6 +145,8 @@ def lambda_handler(event, context):
 
 ### CloudWatch Logs Insights
 
+**[📖 CloudWatch Logs Insights Query Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)** - Analyze log data with interactive queries
+
 #### Query Examples
 ```sql
 -- Find errors in Lambda logs
@@ -176,6 +184,8 @@ fields @type, @duration, @initDuration
 ```
 
 ### CloudWatch Alarms
+
+**[📖 Using Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)** - Set alarms and receive notifications
 
 #### Creating Alarms
 ```python
@@ -256,6 +266,8 @@ cloudwatch.put_dashboard(
 
 ## AWS X-Ray
 
+**[📖 AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)** - Analyze and debug distributed applications
+
 ### Distributed Tracing
 
 #### X-Ray Concepts
@@ -266,6 +278,8 @@ cloudwatch.put_dashboard(
 - **Metadata**: Additional data not indexed
 
 #### X-Ray SDK Integration
+
+**[📖 X-Ray SDK for Python](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python.html)** - Instrument Python applications with X-Ray
 
 ##### Python Example
 ```python
@@ -415,6 +429,8 @@ service("my-api") AND http.status = 500 AND responsetime > 2
 
 ### Lambda Optimization
 
+**[📖 Lambda Performance Optimization](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html#function-configuration)** - Optimize Lambda function performance and cost
+
 #### Cold Start Reduction
 ```python
 # Initialize outside handler (reused across invocations)
@@ -502,6 +518,8 @@ def lambda_handler(event, context):
 
 ### DynamoDB Optimization
 
+**[📖 DynamoDB Performance Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)** - Design for optimal performance and cost
+
 #### Partition Key Design
 ```python
 # GOOD: Evenly distributed partition keys
@@ -558,6 +576,8 @@ response = dynamodb.batch_get_item(
 ```
 
 #### DynamoDB DAX (Caching)
+
+**[📖 DynamoDB Accelerator (DAX)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)** - In-memory caching for DynamoDB
 ```python
 import amazondax
 
@@ -574,6 +594,8 @@ response = dax.get_item(
 ```
 
 ### API Gateway Optimization
+
+**[📖 API Gateway Caching](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html)** - Enable API caching to improve latency and reduce backend load
 
 #### Caching
 ```python

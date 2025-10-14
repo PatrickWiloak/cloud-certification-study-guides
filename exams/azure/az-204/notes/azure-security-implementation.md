@@ -3,6 +3,9 @@
 ## Overview
 This domain covers implementing user authentication and authorization using Microsoft Identity Platform, and securing cloud solutions with Azure Key Vault and managed identities. It represents 20-25% of the exam and focuses on identity management and secrets protection.
 
+**[📖 Microsoft Identity Platform Documentation](https://learn.microsoft.com/en-us/entra/identity-platform/)** - Complete identity platform documentation
+**[📖 Azure Key Vault Documentation](https://learn.microsoft.com/en-us/azure/key-vault/)** - Secrets, keys, and certificate management
+
 ## Key Topics
 
 ### User Authentication and Authorization
@@ -11,10 +14,19 @@ This domain covers implementing user authentication and authorization using Micr
 - Shared Access Signature (SAS) creation and implementation
 - Microsoft Graph API integration and usage
 
+**[📖 OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols)** - Authentication protocols and flows
+**[📖 MSAL Authentication Libraries](https://learn.microsoft.com/en-us/entra/identity-platform/msal-overview)** - Microsoft Authentication Library overview
+**[📖 Microsoft Graph API](https://learn.microsoft.com/en-us/graph/overview)** - Unified API for Microsoft 365 services
+**[📖 Shared Access Signatures](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)** - Secure delegated access to storage resources
+
 ### Secure Cloud Solutions
 - App Configuration and Azure Key Vault for configuration data
 - Keys, secrets, and certificates management in Key Vault
 - Managed Identities for Azure resources implementation
+
+**[📖 Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/)** - Centralized application configuration service
+**[📖 Key Vault Secrets](https://learn.microsoft.com/en-us/azure/key-vault/secrets/)** - Secret management and retrieval
+**[📖 Managed Identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)** - Automatic credential management for Azure resources
 
 ## Services Reference
 
@@ -30,6 +42,9 @@ This domain covers implementing user authentication and authorization using Micr
 - Azure RBAC
 - Azure AD B2C for customer identity
 - Azure AD B2B for partner access
+
+**[📖 Azure Role-Based Access Control](https://learn.microsoft.com/en-us/azure/role-based-access-control/)** - RBAC and permission management
+**[📖 Azure AD B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/)** - Customer identity and access management
 
 ## Best Practices
 

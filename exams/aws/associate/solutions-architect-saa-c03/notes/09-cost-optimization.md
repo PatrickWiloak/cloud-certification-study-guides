@@ -1,6 +1,10 @@
 # AWS Cost Optimization - SAA-C03
 
+**[📖 AWS Cost Optimization Pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html)** - Run systems to deliver business value at the lowest price point
+
 ## EC2 Cost Optimization
+
+**[📖 EC2 Pricing](https://aws.amazon.com/ec2/pricing/)** - Understand EC2 pricing models
 
 ### EC2 Pricing Models
 
@@ -18,12 +22,16 @@
 - **Payment**: All upfront, partial upfront, no upfront
 - Use Case: Steady-state workloads
 
+**[📖 Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)** - Save up to 72% with long-term commitments
+
 **Savings Plans**:
 - 1 or 3-year commitment
 - Up to 72% discount
 - **Compute Savings Plan**: Flexible across instance family, region, OS
 - **EC2 Instance Savings Plan**: Flexible within instance family
 - Use Case: Predictable usage with flexibility
+
+**[📖 Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html)** - Flexible pricing model for compute usage
 
 **Spot Instances**:
 - Up to 90% discount
@@ -65,6 +73,8 @@
 - Aim for 60-80% Reserved/Savings coverage
 
 ## Storage Cost Optimization
+
+**[📖 S3 Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)** - Optimize storage costs with the right storage class
 
 ### S3 Storage Classes
 
@@ -177,6 +187,8 @@
 
 ## Monitoring and Cost Management
 
+**[📖 AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)** - Visualize and analyze costs
+
 ### AWS Cost Explorer
 - Visualize spending patterns
 - Filter by service, account, tag, region
@@ -193,6 +205,8 @@
   - RI utilization budgets
   - RI coverage budgets
   - Savings Plans budgets
+
+**[📖 AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)** - Set custom budgets and receive alerts
 
 **Budget Actions**:
 - Apply IAM policy to restrict services
@@ -219,6 +233,8 @@
 - Performance risk assessment
 - Historical utilization analysis
 - Integration with Cost Explorer
+
+**[📖 AWS Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/)** - Get recommendations to optimize AWS resources
 
 ## Architectural Cost Optimization
 
@@ -247,6 +263,8 @@
 - Often cheaper total cost of ownership
 
 ## Free Tier and Trials
+
+**[📖 AWS Free Tier](https://aws.amazon.com/free/)** - Explore AWS with free tier offerings
 
 ### AWS Free Tier
 

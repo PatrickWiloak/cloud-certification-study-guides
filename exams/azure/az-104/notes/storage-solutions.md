@@ -1,6 +1,10 @@
 # Azure Storage Solutions - AZ-104
 
+**[📖 Azure Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/)** - Comprehensive guide to Azure Storage services
+
 ## Azure Storage Accounts
+
+**[📖 Storage Account Overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)** - Understand Azure Storage account types and options
 
 ### Account Types
 - **Standard general-purpose v2**: Blobs, Files, Queues, Tables (recommended)
@@ -13,6 +17,8 @@
 - **Premium**: SSD-backed, low latency, high throughput
 
 ### Replication Options
+
+**[📖 Azure Storage Redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)** - Choose the right replication strategy for your data
 
 **Locally Redundant Storage (LRS)**:
 - 3 copies within single datacenter
@@ -52,6 +58,8 @@
 
 ### Access Tiers (Blob Storage)
 
+**[📖 Blob Storage Access Tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)** - Optimize costs with hot, cool, and archive tiers
+
 **Hot**:
 - Frequently accessed data
 - Highest storage cost, lowest access cost
@@ -86,6 +94,8 @@
 
 ## Azure Blob Storage
 
+**[📖 Introduction to Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)** - Object storage for unstructured data
+
 ### Blob Types
 **Block Blobs**:
 - Text and binary data
@@ -110,6 +120,8 @@
 - **Private**: No anonymous access (default)
 
 ### Blob Security
+
+**[📖 Grant Limited Access with SAS](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)** - Secure delegated access to storage resources
 
 **Shared Access Signature (SAS)**:
 - Delegated access with specific permissions
@@ -147,6 +159,8 @@
 
 ## Azure Files
 
+**[📖 Azure Files Documentation](https://learn.microsoft.com/en-us/azure/storage/files/)** - Cloud file shares accessible via SMB and NFS protocols
+
 ### Features
 - Fully managed SMB and NFS file shares
 - Mount from Windows, Linux, macOS
@@ -168,6 +182,9 @@
 - Use Case: Performance-sensitive workloads
 
 ### Azure File Sync
+
+**[📖 Azure File Sync Overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction)** - Centralize file shares with cloud tiering capabilities
+
 - Sync on-premises file servers with Azure Files
 - Cloud tiering: Cache frequently accessed files locally
 - Multi-site sync
@@ -188,6 +205,8 @@
 - Reduces on-premises storage requirements
 
 ## Azure Storage Security
+
+**[📖 Azure Storage Encryption](https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption)** - Data encryption at rest and in transit
 
 ### Encryption
 **Encryption at Rest**:
@@ -234,7 +253,11 @@
 
 ## Data Migration
 
+**[📖 Choose an Azure Data Transfer Solution](https://learn.microsoft.com/en-us/azure/storage/common/storage-choose-data-transfer-solution)** - Select the best migration method for your scenario
+
 ### AzCopy
+
+**[📖 Get Started with AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)** - Command-line utility for copying data to Azure Storage
 - Command-line utility
 - Copy data to/from storage accounts
 - Blobs, Files, Tables

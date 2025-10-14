@@ -1,6 +1,10 @@
 # Azure Networking and Virtual Networks - AZ-104
 
+**[📖 Azure Networking Documentation](https://learn.microsoft.com/en-us/azure/networking/)** - Complete guide to Azure networking services
+
 ## Virtual Networks (VNets)
+
+**[📖 Virtual Networks Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)** - Private networks for Azure resources
 
 ### VNet Basics
 - Private network in Azure
@@ -51,6 +55,8 @@ Reserved IPs (example 10.0.0.0/24):
 
 ## Network Security
 
+**[📖 Network Security Groups](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview)** - Filter network traffic to and from Azure resources
+
 ### Network Security Groups (NSGs)
 
 **Rules**:
@@ -97,6 +103,9 @@ Allow SQL from AppASG to DBASG
 - Region-specific: Storage.EastUS
 
 ### Azure Firewall
+
+**[📖 Azure Firewall Documentation](https://learn.microsoft.com/en-us/azure/firewall/)** - Cloud-native network security service
+
 - Managed firewall service
 - Centralized network security
 - Stateful firewall
@@ -114,6 +123,9 @@ Allow SQL from AppASG to DBASG
 - **NAT Rules**: Inbound DNAT
 
 ### Azure Bastion
+
+**[📖 Azure Bastion Documentation](https://learn.microsoft.com/en-us/azure/bastion/)** - Secure RDP and SSH access directly from the Azure portal
+
 - Secure RDP/SSH without public IPs
 - Deployed in dedicated subnet (AzureBastionSubnet)
 - HTML5 browser-based
@@ -121,6 +133,8 @@ Allow SQL from AppASG to DBASG
 - **SKUs**: Basic, Standard
 
 ## VNet Connectivity
+
+**[📖 VNet Peering Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)** - Connect virtual networks with low latency
 
 ### VNet Peering
 - Connect two VNets privately
@@ -141,6 +155,9 @@ Allow SQL from AppASG to DBASG
 - Service chaining
 
 ### VPN Gateway
+
+**[📖 VPN Gateway Documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/)** - Connect on-premises networks to Azure with IPsec/IKE VPN
+
 **Site-to-Site (S2S)**:
 - Connect on-premises to Azure
 - IPsec/IKE VPN tunnel
@@ -168,6 +185,9 @@ Allow SQL from AppASG to DBASG
 - Dual tunnels
 
 ### ExpressRoute
+
+**[📖 ExpressRoute Documentation](https://learn.microsoft.com/en-us/azure/expressroute/)** - Private connections to Azure with predictable performance
+
 - Private dedicated connection
 - 50 Mbps to 10 Gbps
 - Connectivity models:
@@ -194,7 +214,11 @@ Allow SQL from AppASG to DBASG
 
 ## Load Balancing
 
+**[📖 Load Balancing in Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview)** - Choose the right load balancing solution
+
 ### Azure Load Balancer
+
+**[📖 Azure Load Balancer Documentation](https://learn.microsoft.com/en-us/azure/load-balancer/)** - Layer 4 load balancing for high availability
 - Layer 4 (TCP/UDP)
 - Public or internal
 - **SKUs**:
@@ -213,6 +237,9 @@ Allow SQL from AppASG to DBASG
 - Source IP affinity (session persistence)
 
 ### Application Gateway
+
+**[📖 Application Gateway Documentation](https://learn.microsoft.com/en-us/azure/application-gateway/)** - Layer 7 load balancer with WAF and SSL termination
+
 - Layer 7 (HTTP/HTTPS)
 - URL-based routing
 - SSL termination
@@ -258,6 +285,8 @@ Allow SQL from AppASG to DBASG
 
 ## Private Connectivity
 
+**[📖 Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/)** - Private connectivity to Azure services over the Microsoft network
+
 ### Private Endpoint
 - Private IP in VNet for Azure resource
 - Traffic over Microsoft backbone
@@ -282,6 +311,8 @@ Allow SQL from AppASG to DBASG
 - Example: Allow only prod storage accounts
 
 ## Network Monitoring
+
+**[📖 Network Watcher Documentation](https://learn.microsoft.com/en-us/azure/network-watcher/)** - Network monitoring and diagnostic tools for Azure
 
 ### Network Watcher
 - Regional service (one per region)

@@ -5,6 +5,8 @@ This domain covers implementing authentication and authorization, encryption, an
 
 ## AWS Identity and Access Management (IAM)
 
+**[📖 IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)** - Complete guide to AWS identity and access management
+
 ### IAM Core Concepts
 
 #### IAM Roles for Applications
@@ -53,7 +55,11 @@ This domain covers implementing authentication and authorization, encryption, an
 3. **Implicit Deny**: Default deny if no explicit allow
 4. **Policy Boundaries**: Sets maximum permissions for IAM entity
 
+**[📖 Policy Evaluation Logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)** - How AWS evaluates policies to authorize requests
+
 ### AWS Security Token Service (STS)
+
+**[📖 AWS STS API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)** - Temporary security credentials with STS
 
 #### Temporary Credentials
 ```python
@@ -96,6 +102,8 @@ s3 = temp_session.client('s3')
 
 ## Amazon Cognito
 
+**[📖 Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)** - User authentication and authorization for web and mobile apps
+
 ### Cognito User Pools
 
 #### User Authentication
@@ -135,6 +143,8 @@ await Auth.signOut();
 - **Lambda Triggers**: Pre/post authentication, token generation hooks
 
 ### Cognito Identity Pools
+
+**[📖 Amazon Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html)** - Federated identities for AWS resource access
 
 #### Federated Access to AWS
 ```javascript
@@ -178,6 +188,8 @@ authorizers:
 ```
 
 ## AWS Key Management Service (KMS)
+
+**[📖 AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)** - Create and manage encryption keys
 
 ### KMS Key Types
 
@@ -256,6 +268,8 @@ encrypted_key = response['CiphertextBlob']
 ```
 
 ### Envelope Encryption Pattern
+
+**[📖 Envelope Encryption](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping)** - Learn about envelope encryption with KMS
 ```python
 # 1. Generate data key
 response = kms.generate_data_key(KeyId='alias/my-key', KeySpec='AES_256')
@@ -272,6 +286,8 @@ encrypted_data = cipher.encrypt(b'Large amount of data')
 ```
 
 ## AWS Secrets Manager
+
+**[📖 AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)** - Manage and rotate secrets throughout their lifecycle
 
 ### Managing Application Secrets
 
@@ -330,6 +346,8 @@ secrets_client.rotate_secret(
 
 ## AWS Systems Manager Parameter Store
 
+**[📖 AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)** - Secure storage for configuration data and secrets
+
 ### Store Configuration Data
 ```python
 import boto3
@@ -371,6 +389,8 @@ response = ssm.get_parameters_by_path(
 ```
 
 ## AWS Certificate Manager (ACM)
+
+**[📖 AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)** - Provision and manage SSL/TLS certificates
 
 ### SSL/TLS Certificate Management
 
@@ -437,6 +457,8 @@ def get_db_credentials():
 ```
 
 ### Encryption Best Practices
+
+**[📖 Data Protection in AWS](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)** - Best practices for encrypting data at rest and in transit
 
 #### Data at Rest
 - **S3**: Server-side encryption (SSE-S3, SSE-KMS, SSE-C)

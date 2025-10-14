@@ -1,6 +1,10 @@
 # Azure Compute and Virtual Machines - AZ-104
 
+**[📖 Azure Virtual Machines Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/)** - Comprehensive guide to Azure VMs
+
 ## Azure Virtual Machines
+
+**[📖 VM Sizes and Types](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes)** - Choose the right VM size for your workload
 
 ### VM Sizes and Series
 
@@ -39,6 +43,8 @@
 
 ### Availability Options
 
+**[📖 Availability Options for Azure VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/availability)** - High availability strategies for virtual machines
+
 **Availability Sets**:
 - Logical grouping within a datacenter
 - **Fault Domains (FD)**: Separate power and network (max 3)
@@ -63,6 +69,8 @@
 - Use Case: Auto-scaling applications
 
 ### Disk Types
+
+**[📖 Azure Managed Disks Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview)** - Storage options for Azure virtual machines
 
 **OS Disk**:
 - Required for every VM
@@ -146,7 +154,11 @@
 
 ## Azure App Service
 
+**[📖 App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)** - Deploy and scale web apps on Azure App Service
+
 ### App Service Plans
+
+**[📖 App Service Pricing and Plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)** - Understand App Service plan tiers and features
 
 **Tiers**:
 - **Free (F1)**: Shared compute, 1 GB RAM, 1 GB storage
@@ -164,6 +176,9 @@
 - **VNet Integration**: Premium and above
 
 ### Deployment Slots
+
+**[📖 Set up Staging Environments in App Service](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots)** - Deploy apps with zero downtime using deployment slots
+
 - Separate instances with own hostnames
 - Swap between slots (staging ↔ production)
 - Zero downtime deployments
@@ -193,6 +208,8 @@
 
 ## Azure Container Services
 
+**[📖 Azure Container Instances Documentation](https://learn.microsoft.com/en-us/azure/container-instances/)** - Run containers without managing servers
+
 ### Azure Container Instances (ACI)
 - Serverless containers
 - No VM management
@@ -211,6 +228,9 @@
 - Content trust and signing
 
 ### Azure Kubernetes Service (AKS)
+
+**[📖 Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/)** - Deploy and manage containerized applications with Kubernetes
+
 - Managed Kubernetes
 - Free control plane
 - Automatic upgrades and patching
@@ -232,6 +252,8 @@
 
 ## ARM Templates and Automation
 
+**[📖 Azure Resource Manager Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)** - Deploy infrastructure as code with ARM templates
+
 ### ARM Template Structure
 ```json
 {
@@ -249,6 +271,9 @@
 - **Complete**: Delete resources not in template
 
 ### Bicep
+
+**[📖 Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)** - Simplified language for deploying Azure resources
+
 - Domain-specific language for ARM templates
 - Simpler syntax than JSON
 - Transpiles to ARM templates
@@ -293,6 +318,8 @@ Stop-AzVM -Name "myVM" -ResourceGroupName "myRG"
 ```
 
 ## VM Extensions
+
+**[📖 Virtual Machine Extensions](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/overview)** - Automate post-deployment configuration with VM extensions
 
 ### Common Extensions
 - **Custom Script Extension**: Run scripts during/after deployment

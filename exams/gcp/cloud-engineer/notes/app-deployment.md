@@ -1,5 +1,7 @@
 # Application Deployment - Cloud Engineer
 
+**[📖 Deployment Best Practices](https://cloud.google.com/architecture/framework/operational-excellence/deploy-applications)** - Application deployment strategies
+
 ## Compute Engine Deployment
 
 ### Instance Creation
@@ -81,6 +83,9 @@ gcloud compute instance-templates delete web-template
 ```
 
 ### Managed Instance Groups (MIGs)
+
+**[📖 Instance Groups](https://cloud.google.com/compute/docs/instance-groups)** - Managed and unmanaged instance groups
+**[📖 Autoscaling](https://cloud.google.com/compute/docs/autoscaler)** - Configure autoscaling policies
 
 **Creating MIGs**:
 ```bash
@@ -215,6 +220,9 @@ gcloud compute health-checks create tcp tcp-health-check \
 ```
 
 ## Google Kubernetes Engine (GKE) Deployment
+
+**[📖 GKE Quickstart](https://cloud.google.com/kubernetes-engine/docs/deploy-app-cluster)** - Deploy an application to GKE
+**[📖 kubectl Reference](https://kubernetes.io/docs/reference/kubectl/)** - kubectl command reference
 
 ### Cluster Creation
 
@@ -773,6 +781,9 @@ spec:
 
 ## App Engine
 
+**[📖 App Engine Documentation](https://cloud.google.com/appengine/docs)** - Deploy applications to App Engine
+**[📖 app.yaml Reference](https://cloud.google.com/appengine/docs/standard/python3/config/appref)** - Configuration file reference
+
 ### Environments Comparison
 
 | Feature | Standard Environment | Flexible Environment |
@@ -1075,6 +1086,9 @@ handlers:
 - Built on Knative
 - Supports any language/library/binary
 
+**[📖 Cloud Run Quickstart](https://cloud.google.com/run/docs/quickstarts/build-and-deploy)** - Deploy a container to Cloud Run
+**[📖 Cloud Run YAML Reference](https://cloud.google.com/run/docs/reference/yaml/v1)** - Service configuration reference
+
 ### Deployment
 
 **Deploy from Container Image**:
@@ -1331,6 +1345,9 @@ gcloud logging read "resource.type=cloud_run_revision AND resource.labels.servic
 - Auto-scaling
 - No server management
 - Simpler than Cloud Run for event-driven tasks
+
+**[📖 Cloud Functions Quickstart](https://cloud.google.com/functions/docs/quickstart)** - Deploy your first function
+**[📖 Triggering Functions](https://cloud.google.com/functions/docs/calling)** - Event triggers and invocation
 
 ### Generations Comparison
 

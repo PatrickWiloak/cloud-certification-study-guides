@@ -288,6 +288,247 @@ User Service ↔ Order Service ↔ Payment Service ↔ Inventory Service
 }
 ```
 
+### ECS Network Modes
+
+**[📖 ECS Network Modes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html)** - Comprehensive networking guide
+
+ECS network modes determine how containers within a task communicate with each other, with other services, and with the underlying host network. Each network mode configures the networking environment differently, impacting security, connectivity, and control.
+
+#### 1. None Network Mode
+
+**What it does**: Containers have **no external network connectivity**. They cannot communicate with other containers, services, or the internet.
+
+**Key Characteristics:**
+- No external network interfaces assigned
+- Port mappings cannot be specified
+- Containers can only communicate within the same task via **localhost**
+- Maximum network isolation
+
+**Use Cases:**
+- Isolated, compute-intensive batch workloads (data processing, rendering)
+- Tasks requiring maximum network isolation for security
+- Workloads with no external communication needs
+
+**Limitations:**
+- No external connectivity limits use for networked applications
+- Not suitable for microservices requiring inter-service communication
+- Cannot host web servers or APIs
+
+**Example Task Definition:**
+```json
+{
+  "family": "isolated-batch-job",
+  "networkMode": "none",
+  "containerDefinitions": [
+    {
+      "name": "batch-processor",
+      "image": "my-batch-app:latest",
+      "memory": 512,
+      "cpu": 256
+    }
+  ]
+}
+```
+
+#### 2. Bridge Network Mode
+
+**What it does**: Containers use **Docker's built-in virtual network** (Docker bridge) on the host EC2 instance. Docker manages port mappings to route traffic.
+
+**Key Characteristics:**
+- Containers get private IPs within Docker bridge network
+- Port mappings required to expose services (e.g., container port 80 → host port 8080)
+- Security groups applied at **EC2 instance level**, not per task
+- Containers on same host communicate via Docker bridge
+- **[📖 Bridge Mode Details](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking-bridge.html)**
+
+**Use Cases:**
+- Legacy applications not requiring advanced networking
+- Simple workloads without fine-grained network control needs
+- Development/testing environments prioritizing simplicity
+- Applications where multiple containers share host networking
+
+**Limitations:**
+- Limited network isolation (containers share host network stack)
+- Security groups apply to entire EC2 instance, not individual tasks
+- Complex port management with overlapping ports
+- Less secure for multi-tenant or sensitive workloads
+
+**Example Task Definition:**
+```json
+{
+  "family": "web-app-bridge",
+  "networkMode": "bridge",
+  "containerDefinitions": [
+    {
+      "name": "web-server",
+      "image": "nginx:latest",
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 8080,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### 3. Host Network Mode
+
+**What it does**: Containers **bypass Docker's virtual network** and directly use the **host EC2 instance's network interface**.
+
+**Key Characteristics:**
+- Containers share host's IP address and network stack
+- No network abstraction layer
+- Port mappings not needed (containers use host ports directly)
+- Security groups at **EC2 instance level**
+- Cannot run multiple instances of same task on single host (port conflicts)
+- **[📖 Host Mode Details](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking-host.html)**
+
+**Use Cases:**
+- High-performance applications requiring direct network access
+- Low-latency network services (real-time analytics, streaming)
+- Single task per host workloads
+- Applications where network simplicity outweighs isolation needs
+
+**Limitations:**
+- No network isolation between containers and host (security risk)
+- Port conflicts prevent multiple task instances per host
+- Security groups apply to entire EC2 instance
+- Less secure due to shared network stack
+
+**Example Task Definition:**
+```json
+{
+  "family": "high-performance-app",
+  "networkMode": "host",
+  "containerDefinitions": [
+    {
+      "name": "streaming-app",
+      "image": "my-streaming-app:latest",
+      "memory": 1024,
+      "cpu": 512
+    }
+  ]
+}
+```
+
+#### 4. awsvpc Network Mode (Recommended for Production)
+
+**What it does**: Each ECS task gets its own **Elastic Network Interface (ENI)** with a private IP address in the VPC, providing the same networking capabilities as an EC2 instance.
+
+**Key Characteristics:**
+- Each task gets dedicated ENI with private IP
+- **Security groups at task level** (fine-grained control)
+- Compatible with **VPC Flow Logs** for traffic monitoring
+- Containers in same task communicate via **localhost**
+- Requires **NetworkConfiguration** (subnets, security groups)
+- **Required for Fargate launch type**
+- **[📖 awsvpc Mode Details](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking-awsvpc.html)**
+
+**Use Cases:**
+- **Production microservices** (recommended for most workloads)
+- Applications requiring strong network isolation and security
+- Workloads needing task-specific security groups (least privilege)
+- Compliance-driven environments requiring network monitoring
+- Applications integrating with VPC features (private subnets, route tables)
+- **Fargate deployments** (mandatory)
+
+**Security Benefits:**
+- **Granular security**: Task-level security groups enable fine-grained traffic control
+- **Network monitoring**: Dedicated ENI supports VPC Flow Logs for compliance
+- **IAM roles for tasks**: Avoid passing credentials; use temporary credentials
+- **Isolation**: Each task in own network namespace
+
+**Limitations:**
+- Slightly higher operational complexity (VPC configuration required)
+- Consumes ENIs (consider VPC ENI limits for large deployments)
+- Not ideal for extremely lightweight workloads
+
+**Example Task Definition:**
+```json
+{
+  "family": "microservice-app",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::account:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::account:role/ecsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "api-service",
+      "image": "my-api:latest",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/api-service",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Example Service with NetworkConfiguration:**
+```bash
+aws ecs create-service \
+  --cluster production-cluster \
+  --service-name api-service \
+  --task-definition microservice-app:1 \
+  --desired-count 3 \
+  --launch-type FARGATE \
+  --network-configuration "awsvpcConfiguration={
+    subnets=[subnet-12345,subnet-67890],
+    securityGroups=[sg-api-service],
+    assignPublicIp=DISABLED
+  }" \
+  --load-balancers "targetGroupArn=arn:aws:elasticloadbalancing:...,containerName=api-service,containerPort=3000"
+```
+
+#### Network Mode Comparison Table
+
+| Feature | None | Bridge | Host | awsvpc |
+|---------|------|--------|------|--------|
+| **External Connectivity** | ❌ No | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Task-Level Security Groups** | ❌ No | ❌ No | ❌ No | ✅ Yes |
+| **Network Isolation** | ⭐ Maximum | 🟡 Limited | ❌ None | ⭐ High |
+| **ENI per Task** | ❌ No | ❌ No | ❌ No | ✅ Yes |
+| **VPC Flow Logs Support** | ❌ No | 🟡 Instance-level | 🟡 Instance-level | ✅ Task-level |
+| **Port Mapping** | ❌ Not allowed | ✅ Required | ❌ Not needed | ✅ Optional |
+| **Fargate Compatible** | ❌ No | ❌ No | ❌ No | ✅ Yes |
+| **Operational Complexity** | ⭐ Lowest | 🟡 Medium | 🟡 Medium | 🟢 Higher |
+| **Security Level** | 🟡 Isolated | ⚠️ Low | ⚠️ Low | ⭐ High |
+| **Best For** | Batch jobs | Legacy apps | High-perf | Production microservices |
+
+#### Exam Scenario: CRM Portal Security
+
+**Scenario**: Company deploying customer-facing CRM portal with strict security requirements. Needs container-level security groups, network monitoring, and secure AWS resource access.
+
+**Why awsvpc is correct:**
+1. **Task-level security groups**: Apply least privilege at container level
+2. **VPC Flow Logs**: Monitor traffic for compliance
+3. **IAM roles for tasks**: Secure AWS resource access without hardcoded credentials
+4. **Network isolation**: Each task in own network namespace
+
+**Why other modes are incorrect:**
+- **None**: No external connectivity (CRM needs internet access)
+- **Bridge**: Security groups at instance level (insufficient granularity)
+- **Host**: No task isolation, port conflicts, instance-level security
+- **Passing IAM credentials**: Security risk (credentials in logs, misconfiguration)
+
+**Best Practice**: Use **awsvpc + IAM roles for tasks** for secure, production microservices.
+
 ### Best Practices
 
 #### Container Design

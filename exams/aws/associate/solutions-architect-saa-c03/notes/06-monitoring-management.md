@@ -2,7 +2,11 @@
 
 ## Amazon CloudWatch
 
+**[📖 Amazon CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/)** - Monitor AWS resources and applications
+
 ### CloudWatch Metrics
+
+**[📖 CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html)** - Collect and track metrics
 
 **Default Metrics** (no agent required):
 - **EC2**: CPU, Network, Disk (read/write ops), Status Checks
@@ -27,6 +31,8 @@
 
 ### CloudWatch Alarms
 
+**[📖 CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)** - Monitor metrics and send notifications
+
 **States**:
 - **OK**: Metric within threshold
 - **ALARM**: Metric breached threshold
@@ -43,6 +49,8 @@
 - **Composite Alarm**: Combination of multiple alarms (AND, OR logic)
 
 ### CloudWatch Logs
+
+**[📖 CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)** - Monitor and store log files
 
 **Components**:
 - **Log Groups**: Collection of log streams (e.g., /aws/lambda/my-function)
@@ -104,6 +112,8 @@ fields @timestamp, @message
 
 ## AWS X-Ray
 
+**[📖 AWS X-Ray Documentation](https://docs.aws.amazon.com/xray/)** - Analyze and debug distributed applications
+
 ### Features
 - Distributed tracing for applications
 - Service map visualization
@@ -134,12 +144,16 @@ fields @timestamp, @message
 
 ## AWS CloudTrail
 
+**[📖 AWS CloudTrail Documentation](https://docs.aws.amazon.com/cloudtrail/)** - Track user activity and API usage
+
 ### Features
 - API call logging and auditing
 - Records user activity and API usage
 - **Management Events**: Control plane operations (default, free)
 - **Data Events**: Resource operations (S3 object, Lambda invocations) - charged
 - **Insights Events**: Unusual API activity detection
+
+**[📖 CloudTrail Events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html)** - Understand CloudTrail event types
 
 ### Trail Types
 - **Single-region**: Logs events in one region
@@ -166,6 +180,8 @@ fields @timestamp, @message
 - Separate logging account for security
 
 ## AWS Config
+
+**[📖 AWS Config Documentation](https://docs.aws.amazon.com/config/)** - Track resource configurations and compliance
 
 ### Features
 - Resource inventory and configuration history
@@ -196,6 +212,8 @@ fields @timestamp, @message
 
 ## AWS Systems Manager
 
+**[📖 AWS Systems Manager Documentation](https://docs.aws.amazon.com/systems-manager/)** - Unified interface to manage AWS resources
+
 ### Parameter Store
 - Secure storage for configuration and secrets
 - Hierarchical structure (/app/dev/db-password)
@@ -203,6 +221,8 @@ fields @timestamp, @message
 - **Advanced**: $0.05/month, 8 KB size, 100,000 parameters
 - Encryption with KMS
 - Integration with CloudFormation, Lambda, ECS
+
+**[📖 Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)** - Centralized store for configuration data
 
 ### Session Manager
 - Secure shell access without SSH keys or bastion hosts
@@ -234,6 +254,8 @@ fields @timestamp, @message
 - Use Case: Ensure CloudWatch agent running
 
 ## AWS Trusted Advisor
+
+**[📖 AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html)** - Real-time guidance to provision resources following best practices
 
 ### Categories
 1. **Cost Optimization**: Idle resources, reserved capacity

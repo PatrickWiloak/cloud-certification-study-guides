@@ -7,12 +7,16 @@ This domain covers developing code for applications hosted on AWS, including Lam
 
 ### AWS Lambda
 
+**[📖 AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)** - Complete guide to building and deploying Lambda functions
+
 #### Core Concepts
 - **Execution Model**: Event-driven, serverless compute service
 - **Runtime Support**: Node.js, Python, Java, .NET, Go, Ruby, Custom Runtime
 - **Invocation Types**: Synchronous, Asynchronous, Poll-based
 - **Cold Starts**: Initial invocation delay when creating new execution environment
 - **Warm Containers**: Reused execution environments for subsequent invocations
+
+**[📖 Lambda Execution Environment](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html)** - Learn about Lambda's execution environment lifecycle
 
 #### Lambda Configuration
 ```bash
@@ -44,6 +48,8 @@ aws lambda update-function-configuration \
 5. **Leverage Lambda Layers**: Share code across multiple functions
 6. **Set Appropriate Timeouts**: Balance between completion time and cost
 
+**[📖 Lambda Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)** - Official best practices for Lambda development and operations
+
 #### Lambda Event Sources
 - **S3**: Object creation, deletion, modification events
 - **DynamoDB Streams**: Table change capture
@@ -54,10 +60,14 @@ aws lambda update-function-configuration \
 
 ### Amazon API Gateway
 
+**[📖 API Gateway Developer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)** - Complete guide to creating and managing APIs
+
 #### API Types
 - **REST API**: Full-featured API with caching, throttling, authorization
 - **HTTP API**: Lightweight, lower cost, faster performance
 - **WebSocket API**: Two-way communication for real-time applications
+
+**[📖 Choosing Between REST and HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)** - Compare features and choose the right API type
 
 #### Authentication & Authorization
 ```javascript
@@ -92,6 +102,8 @@ exports.handler = async (event) => {
 - **Usage Plans**: API key management and throttling quotas
 
 ### AWS SDK Best Practices
+
+**[📖 AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)** - Official Boto3 documentation for Python developers
 
 #### Credential Management
 ```python
@@ -144,11 +156,15 @@ except ClientError as e:
 
 ### Amazon DynamoDB
 
+**[📖 DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)** - Complete guide to DynamoDB NoSQL database
+
 #### Table Design
 - **Partition Key**: Determines data distribution across partitions
 - **Sort Key**: Optional, enables range queries within partition
 - **Composite Keys**: Partition key + sort key for hierarchical data
 - **Secondary Indexes**: GSI (Global) and LSI (Local) for alternate query patterns
+
+**[📖 DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)** - Design patterns and optimization strategies
 
 #### DynamoDB Operations
 ```python
@@ -191,6 +207,8 @@ client.transact_write_items(
 ```
 
 #### DynamoDB Streams
+
+**[📖 DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)** - Capture table activity with DynamoDB Streams
 ```python
 # Enable streams on table
 client.update_table(
@@ -214,6 +232,8 @@ def lambda_handler(event, context):
 ```
 
 ### Amazon S3
+
+**[📖 Amazon S3 Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)** - Complete guide to S3 object storage
 
 #### S3 Operations via SDK
 ```python
@@ -269,6 +289,8 @@ upload_id = mpu['UploadId']
 
 ### Amazon RDS
 
+**[📖 Amazon RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)** - Managed relational database service documentation
+
 #### Connection Best Practices
 ```python
 import pymysql
@@ -303,9 +325,13 @@ def lambda_handler(event, context):
 - **Failover Support**: Automatic failover to read replicas
 - **Reduces Cold Starts**: Maintains connection pool
 
+**[📖 RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)** - Connection pooling for serverless applications
+
 ## Application Integration Services
 
 ### Amazon SQS
+
+**[📖 Amazon SQS Developer Guide](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)** - Fully managed message queuing service
 
 #### Queue Types
 - **Standard Queue**: At-least-once delivery, best-effort ordering
@@ -348,6 +374,8 @@ sqs.send_message_batch(QueueUrl=queue_url, Entries=entries)
 ```
 
 ### Amazon SNS
+
+**[📖 Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)** - Pub/sub messaging and mobile notifications
 
 #### SNS Publishing
 ```python

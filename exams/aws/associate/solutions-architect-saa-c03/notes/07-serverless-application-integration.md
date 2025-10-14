@@ -2,12 +2,16 @@
 
 ## AWS Lambda
 
+**[📖 AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/)** - Run code without provisioning servers
+
 ### Core Concepts
 - Event-driven, serverless compute
 - Pay per request and compute time
 - Automatic scaling (up to 1,000 concurrent by default)
 - No server management
 - Supports multiple languages (Node.js, Python, Java, Go, .NET, Ruby, custom runtimes)
+
+**[📖 Lambda Function Configuration](https://docs.aws.amazon.com/lambda/latest/dg/lambda-functions.html)** - Configure Lambda functions for your use case
 
 ### Limits
 - **Memory**: 128 MB to 10,240 MB (1 MB increments)
@@ -73,7 +77,11 @@
 
 ## Amazon API Gateway
 
+**[📖 Amazon API Gateway Documentation](https://docs.aws.amazon.com/apigateway/)** - Create, publish, and manage APIs at any scale
+
 ### Types
+
+**[📖 API Gateway API Types](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-endpoint-types.html)** - Choose the right API type
 
 **REST API**:
 - RESTful architecture
@@ -126,11 +134,15 @@
 
 ## Amazon SQS (Simple Queue Service)
 
+**[📖 Amazon SQS Documentation](https://docs.aws.amazon.com/sqs/)** - Fully managed message queuing service
+
 ### Standard Queue
 - **Unlimited Throughput**: Unlimited TPS
 - **At-Least-Once Delivery**: May deliver duplicates
 - **Best-Effort Ordering**: Messages may be out of order
 - **Use Case**: Decouple applications, buffer requests
+
+**[📖 SQS Standard vs FIFO](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)** - Choose between queue types
 
 ### FIFO Queue
 - **Ordered**: Exactly-once processing
@@ -160,11 +172,15 @@
 
 ## Amazon SNS (Simple Notification Service)
 
+**[📖 Amazon SNS Documentation](https://docs.aws.amazon.com/sns/)** - Fully managed pub/sub messaging service
+
 ### Pub/Sub Model
 - **Topic**: Communication channel
 - **Publishers**: Send messages to topic
 - **Subscribers**: Receive messages from topic
 - **Fan-out**: One message to multiple subscribers
+
+**[📖 SNS Topics](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html)** - Create and subscribe to topics
 
 ### Subscription Types
 - **SQS**: Decouple, persist, process asynchronously
@@ -197,12 +213,16 @@
 
 ## AWS Step Functions
 
+**[📖 AWS Step Functions Documentation](https://docs.aws.amazon.com/step-functions/)** - Visual workflow service for distributed applications
+
 ### Features
 - Orchestrate serverless workflows
 - Visual workflow editor
 - State machines (JSON)
 - Error handling and retries
 - Parallel and choice states
+
+**[📖 Step Functions States](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html)** - Build state machines with different state types
 
 ### Workflow Types
 
@@ -241,6 +261,8 @@
 
 ## Amazon EventBridge
 
+**[📖 Amazon EventBridge Documentation](https://docs.aws.amazon.com/eventbridge/)** - Serverless event bus for SaaS and AWS services
+
 ### Event Bus
 - Default bus for AWS services
 - Custom bus for applications
@@ -270,6 +292,8 @@
 - SaaS integration
 
 ## Amazon AppSync
+
+**[📖 AWS AppSync Documentation](https://docs.aws.amazon.com/appsync/)** - Develop GraphQL APIs for real-time data synchronization
 
 ### Features
 - Managed GraphQL service

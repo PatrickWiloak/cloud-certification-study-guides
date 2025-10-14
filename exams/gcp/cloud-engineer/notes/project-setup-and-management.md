@@ -4,6 +4,9 @@
 
 This document covers Google Cloud project setup, organization structure, billing configuration, resource management, and the gcloud CLI. Understanding project and resource management is fundamental for the Associate Cloud Engineer certification.
 
+**[📖 Resource Manager](https://cloud.google.com/resource-manager/docs)** - Manage GCP resource hierarchy
+**[📖 gcloud CLI Overview](https://cloud.google.com/sdk/gcloud)** - Command-line interface for Google Cloud
+
 ## Key Topics
 
 ### 1. Google Cloud Resource Hierarchy
@@ -11,6 +14,9 @@ This document covers Google Cloud project setup, organization structure, billing
 - Policy inheritance and permissions
 - Resource naming and organization
 - Best practices for hierarchy design
+
+**[📖 Resource Hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy)** - Understanding the resource hierarchy
+**[📖 Creating Projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)** - Create and manage projects
 
 ### 2. Project Management
 - Creating and managing projects
@@ -24,17 +30,26 @@ This document covers Google Cloud project setup, organization structure, billing
 - Billing reports and export
 - Budget alerts and notifications
 
+**[📖 Billing Documentation](https://cloud.google.com/billing/docs)** - Manage billing accounts and costs
+**[📖 Budgets and Alerts](https://cloud.google.com/billing/docs/how-to/budgets)** - Set up budget alerts
+
 ### 4. gcloud CLI
 - Installation and configuration
 - Authentication and authorization
 - Common commands and patterns
 - Configuration management
 
+**[📖 gcloud Reference](https://cloud.google.com/sdk/gcloud/reference)** - Complete gcloud command reference
+**[📖 gcloud Configurations](https://cloud.google.com/sdk/docs/configurations)** - Manage multiple configurations
+
 ### 5. APIs and Services
 - Enabling and disabling APIs
 - API quotas and rate limits
 - Service accounts for API access
 - API authentication methods
+
+**[📖 Enabling APIs](https://cloud.google.com/apis/docs/getting-started)** - Enable and use Google Cloud APIs
+**[📖 Quotas and Limits](https://cloud.google.com/docs/quota)** - Understanding quotas and limits
 
 ## GCP Services Reference
 
@@ -81,6 +96,9 @@ This document covers Google Cloud project setup, organization structure, billing
 6. **Service Projects**: Use Shared VPC and service projects for networking
 7. **Resource Labels**: Apply labels for cost allocation and organization
 8. **Avoid Flat Structure**: Use hierarchy to simplify management
+
+**[📖 Best Practices for Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)** - Enterprise organization design
+**[📖 Resource Labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels)** - Organize resources with labels
 
 ### Project Management Best Practices
 1. **Project per Environment**: Separate projects for dev, staging, production

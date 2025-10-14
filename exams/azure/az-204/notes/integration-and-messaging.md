@@ -3,6 +3,9 @@
 ## Overview
 This domain covers implementing API Management, developing event-based solutions, and creating message-based solutions. It represents 15-20% of the exam and focuses on integration patterns and asynchronous communication.
 
+**[📖 Azure Integration Services](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/enterprise-integration)** - Enterprise integration overview
+**[📖 Azure Messaging Services](https://learn.microsoft.com/en-us/azure/service-bus-messaging/compare-messaging-services)** - Comparison of Azure messaging services
+
 ## Key Topics
 
 ### API Management
@@ -11,17 +14,29 @@ This domain covers implementing API Management, developing event-based solutions
 - API policy definition and implementation
 - API versioning and revision strategies
 
+**[📖 Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/)** - Complete APIM documentation
+**[📖 APIM Policies](https://learn.microsoft.com/en-us/azure/api-management/api-management-policies)** - Policy expressions and transformations
+**[📖 APIM Authentication](https://learn.microsoft.com/en-us/azure/api-management/authentication-authorization-overview)** - API authentication and authorization
+
 ### Event-based Solutions
 - Azure Event Grid solutions implementation
 - Azure Event Hubs solutions development
 - Event publishing and subscription patterns
 - Event schema design and validation
 
+**[📖 Azure Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/)** - Event-driven architecture with Event Grid
+**[📖 Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/)** - Big data streaming and event ingestion
+**[📖 Event Grid vs Event Hubs](https://learn.microsoft.com/en-us/azure/event-grid/compare-messaging-services)** - Choosing the right messaging service
+
 ### Message-based Solutions
 - Azure Service Bus implementation (queues and topics)
 - Azure Queue Storage queue solutions
 - Message processing patterns
 - Dead letter handling and retry logic
+
+**[📖 Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/)** - Enterprise messaging with queues and topics
+**[📖 Azure Queue Storage](https://learn.microsoft.com/en-us/azure/storage/queues/)** - Simple message queuing service
+**[📖 Service Bus Dead Letter Queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues)** - Handling failed messages
 
 ## Services Reference
 
@@ -37,6 +52,9 @@ This domain covers implementing API Management, developing event-based solutions
 - Azure Functions (triggered by events/messages)
 - Azure Notification Hubs
 - Azure SignalR Service
+
+**[📖 Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/)** - Workflow automation and integration
+**[📖 Azure SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/)** - Real-time web functionality
 
 ## Best Practices
 

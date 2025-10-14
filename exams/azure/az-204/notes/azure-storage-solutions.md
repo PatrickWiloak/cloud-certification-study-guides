@@ -3,6 +3,9 @@
 ## Overview
 This domain covers developing solutions using Azure Cosmos DB and Azure Blob Storage. It represents 15-20% of the exam and focuses on data storage operations, SDK usage, and storage management strategies.
 
+**[📖 Azure Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/)** - Complete Azure Storage documentation
+**[📖 Azure Cosmos DB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/)** - Official Cosmos DB documentation and guides
+
 ## Key Topics
 
 ### Cosmos DB Storage Solutions
@@ -12,12 +15,20 @@ This domain covers developing solutions using Azure Cosmos DB and Azure Blob Sto
 - Consistency level configuration for operations
 - Change feed notification management
 
+**[📖 Cosmos DB Partitioning](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview)** - Partitioning and partition key strategies
+**[📖 Cosmos DB Consistency Levels](https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels)** - Understanding consistency trade-offs
+**[📖 Cosmos DB Change Feed](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed)** - Change feed processing patterns
+
 ### Blob Storage Solutions
 - Moving items between storage accounts and containers
 - Setting and retrieving properties and metadata
 - Data operations using appropriate SDKs
 - Storage policies and data lifecycle management
 - Data archiving and retention implementation
+
+**[📖 Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)** - Complete Blob Storage guide
+**[📖 Blob Storage Lifecycle Management](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview)** - Automated lifecycle policies
+**[📖 Blob Storage Access Tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)** - Hot, Cool, and Archive tier optimization
 
 ## Services Reference
 
@@ -26,10 +37,15 @@ This domain covers developing solutions using Azure Cosmos DB and Azure Blob Sto
 - Azure Blob Storage
 - Azure Storage SDK for .NET, Python, JavaScript, Java
 
+**[📖 Cosmos DB .NET SDK](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/sdk-dotnet-v3)** - .NET SDK v3 for Cosmos DB
+**[📖 Azure Storage Blobs Client Library](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage.blobs-readme)** - Blob Storage SDK for .NET
+
 ### Supporting Services
 - Azure Storage Explorer
 - Azure Data Lake Storage Gen2
 - Azure Content Delivery Network (CDN)
+
+**[📖 Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)** - Hierarchical namespace for big data analytics
 
 ## Best Practices
 

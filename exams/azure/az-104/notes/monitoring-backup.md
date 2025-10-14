@@ -1,5 +1,7 @@
 # Azure Monitoring and Backup - AZ-104
 
+**[📖 Azure Monitor Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/)** - Full stack monitoring for applications and infrastructure
+
 ## Azure Monitor
 
 ### Components
@@ -17,6 +19,9 @@
 - No configuration needed
 
 ### Log Analytics
+
+**[📖 Log Analytics Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview)** - Query and analyze log data with KQL
+
 - Centralized log repository
 - KQL (Kusto Query Language) for analysis
 - Workspace: Container for logs
@@ -35,6 +40,9 @@
 - **Dependency Agent**: Service Map data
 
 ### Application Insights
+
+**[📖 Application Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)** - Application performance monitoring and analytics
+
 - APM for web applications
 - Auto-instrumentation or SDK
 - Request/response times
@@ -44,6 +52,9 @@
 - Availability tests
 
 ### Alerts
+
+**[📖 Azure Monitor Alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview)** - Proactive notifications based on metrics and logs
+
 **Alert Types**:
 - Metric alerts
 - Log query alerts
@@ -57,7 +68,11 @@
 
 ## Azure Backup
 
+**[📖 Azure Backup Documentation](https://learn.microsoft.com/en-us/azure/backup/)** - Cloud-based backup and recovery for Azure and on-premises
+
 ### Recovery Services Vault
+
+**[📖 Recovery Services Vaults Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview)** - Centralized management for backup and disaster recovery
 - Container for backups
 - Regional resource
 - Storage replication: LRS, GRS (default)
@@ -67,6 +82,9 @@
 ### Backup Solutions
 
 **Azure VM Backup**:
+
+**[📖 Back up Azure VMs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction)** - Protect virtual machines with application-consistent backups
+
 - Agent-less (snapshot-based)
 - Application-consistent backups
 - Restore: Entire VM, disks, individual files
@@ -90,6 +108,9 @@
 - Long-term retention
 
 ### Azure Site Recovery (ASR)
+
+**[📖 Azure Site Recovery Documentation](https://learn.microsoft.com/en-us/azure/site-recovery/)** - Disaster recovery and business continuity for VMs
+
 - Disaster recovery solution
 - Replicate VMs to another region
 - Orchestrated failover/failback
@@ -111,6 +132,9 @@
   - Partner solutions
 
 ## Azure Advisor
+
+**[📖 Azure Advisor Documentation](https://learn.microsoft.com/en-us/azure/advisor/)** - Personalized best practice recommendations for Azure resources
+
 - Personalized recommendations
 - Categories:
   - Reliability
@@ -120,6 +144,9 @@
   - Operational Excellence
 
 ## Azure Service Health
+
+**[📖 Azure Service Health Documentation](https://learn.microsoft.com/en-us/azure/service-health/)** - Stay informed about Azure service issues and planned maintenance
+
 - Personalized view of Azure health
 - Service issues affecting your resources
 - Planned maintenance notifications

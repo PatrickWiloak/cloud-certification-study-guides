@@ -6,8 +6,11 @@
 
 If you're looking to pursue a database certification, please consider:
 - **AWS Certified Data Engineer - Associate** (Launched March 2024) - Recommended replacement
+  - **[📖 Data Engineer Certification](https://aws.amazon.com/certification/certified-data-engineer-associate/)** - Official certification page
 - **AWS Certified Solutions Architect - Professional** (Covers advanced database architectures)
+  - **[📖 Solutions Architect Professional](https://aws.amazon.com/certification/certified-solutions-architect-professional/)** - Advanced certification
 - **AWS Certified Solutions Architect - Associate** (Covers database fundamentals)
+  - **[📖 Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - Foundation certification
 
 ---
 
@@ -17,68 +20,117 @@ This practice plan is preserved for those who earned the DBS-C01 certification a
 
 ### Week 1-2: Relational Databases - RDS and Aurora
 - RDS instance deployment (MySQL, PostgreSQL, Oracle, SQL Server, MariaDB)
+  - **[📖 RDS Getting Started](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.html)** - Launch your first RDS instance
 - Multi-AZ deployments for high availability
+  - **[📖 Multi-AZ Deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)** - High availability configuration
 - Read replicas for scaling reads
+  - **[📖 Read Replicas Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)** - Creating and managing read replicas
 - Aurora clusters and global databases
+  - **[📖 Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)** - Multi-region setup
 - Aurora Serverless configuration
+  - **[📖 Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)** - Serverless configuration
 - Backup and restore procedures
+  - **[📖 RDS Backup and Restore](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html)** - Backup strategies
 - Automated backups vs manual snapshots
 
 ### Week 3-4: NoSQL Databases - DynamoDB
 - Table design and partition key selection
+  - **[📖 DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)** - Design patterns and optimization
+  - **[📖 Partition Key Design](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-design.html)** - Choosing effective partition keys
 - DynamoDB Streams for change capture
+  - **[📖 DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)** - Change data capture
 - Global tables for multi-region replication
+  - **[📖 Global Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)** - Multi-region active-active
 - DynamoDB Accelerator (DAX) for caching
+  - **[📖 DAX Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)** - In-memory caching
 - On-demand vs provisioned capacity
+  - **[📖 Capacity Modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)** - Billing and scaling
 - Secondary indexes (GSI and LSI)
+  - **[📖 Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)** - GSI and LSI overview
 - DynamoDB Transactions
+  - **[📖 Transactions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html)** - ACID transactions
 - Point-in-time recovery
+  - **[📖 Point-in-Time Recovery](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.html)** - Backup and restore
 
 ### Week 5: Specialized Databases
 - **Amazon Neptune** - Graph database for social networks, knowledge graphs
+  - **[📖 Neptune User Guide](https://docs.aws.amazon.com/neptune/latest/userguide/)** - Graph database guide
 - **Amazon QLDB** - Ledger database for immutable audit trails
+  - **[📖 QLDB Developer Guide](https://docs.aws.amazon.com/qldb/latest/developerguide/)** - Ledger database guide
 - **Amazon Timestream** - Time series data for IoT and monitoring
+  - **[📖 Timestream Developer Guide](https://docs.aws.amazon.com/timestream/latest/developerguide/)** - Time series database
 - **Amazon DocumentDB** - MongoDB-compatible document database
+  - **[📖 DocumentDB Developer Guide](https://docs.aws.amazon.com/documentdb/latest/developerguide/)** - MongoDB compatibility
 - **Amazon Keyspaces** - Apache Cassandra-compatible database
+  - **[📖 Keyspaces Developer Guide](https://docs.aws.amazon.com/keyspaces/latest/devguide/)** - Cassandra compatibility
 - **Amazon MemoryDB for Redis** - In-memory database
+  - **[📖 MemoryDB Developer Guide](https://docs.aws.amazon.com/memorydb/latest/devguide/)** - Redis-compatible in-memory database
 
 ### Week 6-7: Data Warehousing and Caching
 - Amazon Redshift cluster design and node types
+  - **[📖 Redshift Clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html)** - Cluster management
 - Redshift distribution styles and sort keys
+  - **[📖 Table Design Best Practices](https://docs.aws.amazon.com/redshift/latest/dg/c_designing-tables-best-practices.html)** - Distribution and sort keys
 - Redshift Spectrum for querying S3 data
+  - **[📖 Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html)** - Query external data
 - Redshift Serverless
+  - **[📖 Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html)** - Serverless data warehouse
 - ElastiCache for Redis and Memcached
+  - **[📖 ElastiCache User Guide](https://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/)** - Caching strategies
 - Caching strategies and patterns
+  - **[📖 Caching Strategies](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html)** - Cache design patterns
 - In-memory database use cases
 
 ### Week 8-9: Database Migration
 - AWS Database Migration Service (DMS) architecture
+  - **[📖 DMS User Guide](https://docs.aws.amazon.com/dms/latest/userguide/)** - Migration overview
+  - **[📖 DMS Best Practices](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html)** - Planning and execution
 - Homogeneous vs heterogeneous migrations
+  - **[📖 Migration Types](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.html)** - Understanding migration scenarios
 - Schema Conversion Tool (SCT)
+  - **[📖 SCT User Guide](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/)** - Schema conversion
 - Change Data Capture (CDC) for ongoing replication
+  - **[📖 CDC with DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html)** - Continuous replication
 - Migration validation and testing
+  - **[📖 Data Validation](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Validating.html)** - Validating migrated data
 - Snowball Edge for large database migrations
+  - **[📖 AWS Snowball](https://docs.aws.amazon.com/snowball/)** - Large-scale data transfer
 - Database migration strategies (lift-and-shift, re-platform, refactor)
 
 ### Week 10: Database Security
 - Encryption at rest with KMS
+  - **[📖 RDS Encryption](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)** - Encrypting database instances
 - Encryption in transit with SSL/TLS
+  - **[📖 Using SSL/TLS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html)** - Secure connections
 - IAM database authentication
+  - **[📖 IAM DB Authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)** - Token-based authentication
 - VPC security for databases
+  - **[📖 VPC and RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html)** - Network isolation
 - Database activity streams
+  - **[📖 Database Activity Streams](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStreams.html)** - Real-time monitoring
 - Secrets Manager for credential rotation
+  - **[📖 Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)** - Rotating credentials
 - Network isolation with VPC endpoints
+  - **[📖 VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html)** - Private connectivity
 - Compliance and auditing with CloudTrail
+  - **[📖 Logging with CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)** - API auditing
 
 ### Week 11: Monitoring and Performance
 - CloudWatch metrics for databases
+  - **[📖 CloudWatch Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html)** - Database metrics
 - Enhanced monitoring for RDS
+  - **[📖 Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html)** - OS-level metrics
 - Performance Insights for query analysis
+  - **[📖 Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html)** - Query performance tuning
 - Slow query logs
+  - **[📖 Database Logs](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html)** - Accessing log files
 - Database parameter groups optimization
+  - **[📖 Parameter Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html)** - Database tuning
 - Query optimization techniques
+  - **[📖 Query Optimization](https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html)** - Performance best practices
 - Identifying and resolving bottlenecks
 - Auto Scaling for read replicas and DynamoDB
+  - **[📖 DynamoDB Auto Scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)** - Capacity management
 
 ### Week 12: Review and Practice Exams
 - Complete 2-3 full practice exams

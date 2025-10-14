@@ -1,5 +1,7 @@
 # Data and Analytics Services - Cloud Engineer
 
+**[📖 Data Analytics Products](https://cloud.google.com/products/big-data)** - Google Cloud data and analytics services
+
 ## Cloud Storage
 
 ### Overview
@@ -16,6 +18,9 @@
 | Nearline | < 1x/month access | 30 days | $0.01/GB | $0.010 |
 | Coldline | < 1x/quarter access | 90 days | $0.02/GB | $0.004 |
 | Archive | < 1x/year access | 365 days | $0.05/GB | $0.0012 |
+
+**[📖 Storage Classes Guide](https://cloud.google.com/storage/docs/storage-classes)** - Choose the right storage class
+**[📖 gsutil Tool](https://cloud.google.com/storage/docs/gsutil)** - Command-line tool for Cloud Storage
 
 ### Bucket Creation and Management
 ```bash
@@ -172,6 +177,9 @@ gsutil acl ch -u user@example.com:READ gs://my-bucket/file.txt
 - Automated backups, replication, failover
 - High availability with 99.95% SLA
 - Scale up to 96 CPU cores, 624 GB RAM
+
+**[📖 Cloud SQL Overview](https://cloud.google.com/sql/docs/introduction)** - Managed relational databases
+**[📖 Backup and Recovery](https://cloud.google.com/sql/docs/mysql/backup-recovery/backups)** - Backup and restore operations
 
 ### Instance Creation
 ```bash
@@ -362,6 +370,9 @@ gcloud sql instances patch my-instance \
 - Automatic sharding and replication
 - 99.999% availability SLA for multi-region
 
+**[📖 Cloud Spanner Overview](https://cloud.google.com/spanner/docs/overview)** - Global relational database
+**[📖 Spanner Schema Design](https://cloud.google.com/spanner/docs/schema-design)** - Schema and data model best practices
+
 ### Instance Configuration
 ```bash
 # Create regional instance
@@ -498,6 +509,9 @@ gcloud spanner databases execute-sql mydb \
 - Ideal for time-series, IoT, analytics workloads
 - HBase compatible
 - Linear scalability
+
+**[📖 Bigtable Overview](https://cloud.google.com/bigtable/docs/overview)** - NoSQL database service
+**[📖 Schema Design for Time Series](https://cloud.google.com/bigtable/docs/schema-design-time-series)** - Time-series data patterns
 
 ### Instance and Cluster Creation
 ```bash
@@ -717,6 +731,10 @@ gcloud datastore operations list
 - Columnar storage
 - No infrastructure management
 - Sub-second query response
+
+**[📖 BigQuery Overview](https://cloud.google.com/bigquery/docs/introduction)** - Serverless data warehouse
+**[📖 Query Best Practices](https://cloud.google.com/bigquery/docs/best-practices-performance-compute)** - Optimize query performance
+**[📖 Cost Optimization](https://cloud.google.com/bigquery/docs/best-practices-costs)** - Control BigQuery costs
 
 ### Dataset and Table Creation
 ```bash

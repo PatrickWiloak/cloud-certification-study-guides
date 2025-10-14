@@ -3,6 +3,9 @@
 ## Overview
 This domain covers integrating caching and content delivery into solutions, and implementing monitoring and logging for Azure applications. It represents 15-20% of the exam and focuses on performance optimization and application observability.
 
+**[📖 Azure Monitor Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/)** - Complete monitoring and observability platform
+**[📖 Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)** - Application performance management and monitoring
+
 ## Key Topics
 
 ### Caching and Content Delivery
@@ -11,12 +14,19 @@ This domain covers integrating caching and content delivery into solutions, and 
 - Azure Content Delivery Network (CDN) endpoints and profiles
 - Cache invalidation and update strategies
 
+**[📖 Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/)** - Managed Redis cache service documentation
+**[📖 Azure CDN Documentation](https://learn.microsoft.com/en-us/azure/cdn/)** - Content delivery network and caching strategies
+
 ### Monitoring and Logging
 - Application Insights configuration for apps and services
 - Azure Monitor analysis and troubleshooting
 - Application Insights web tests and alerts
 - Custom telemetry and metrics
 - Log Analytics queries and analysis
+
+**[📖 Application Insights SDK](https://learn.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics)** - Custom events and metrics instrumentation
+**[📖 Log Analytics KQL](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview)** - Kusto Query Language for log analysis
+**[📖 Azure Monitor Alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview)** - Alert rules and notifications
 
 ## Services Reference
 
@@ -27,11 +37,17 @@ This domain covers integrating caching and content delivery into solutions, and 
 - Azure Monitor
 - Azure Log Analytics
 
+**[📖 Redis Best Practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices)** - Performance and configuration best practices
+**[📖 Application Insights Availability Tests](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-overview)** - Web tests and synthetic monitoring
+
 ### Supporting Services
 - Azure Front Door
 - Azure Traffic Manager
 - Azure Service Health
 - Azure Advisor
+
+**[📖 Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/)** - Global load balancer and CDN service
+**[📖 Azure Advisor](https://learn.microsoft.com/en-us/azure/advisor/)** - Personalized best practices and recommendations
 
 ## Best Practices
 

@@ -2,7 +2,11 @@
 
 ## Amazon VPC (Virtual Private Cloud)
 
+**[📖 Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/)** - Isolated cloud resources in a virtual network
+
 ### VPC Basics
+
+**[📖 How VPC Works](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html)** - Understanding VPC components and networking
 - **CIDR Block**: IPv4 range (e.g., 10.0.0.0/16)
 - **Subnets**: Subdivision of VPC CIDR into AZs
 - **Route Tables**: Control traffic routing
@@ -24,6 +28,8 @@
 
 ### NAT Solutions
 
+**[📖 NAT Gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)** - Enable internet access for private subnets
+
 **NAT Gateway** (Recommended):
 - AWS-managed, highly available within AZ
 - 5 Gbps bandwidth, scales to 45 Gbps
@@ -40,12 +46,16 @@
 
 ## Security
 
+**[📖 VPC Security](https://docs.aws.amazon.com/vpc/latest/userguide/security.html)** - Secure your VPC with security groups and NACLs
+
 ### Security Groups (SGs)
 - **Stateful**: Return traffic automatically allowed
 - **Instance-level**: Applied to ENIs
 - **Allow Rules Only**: Cannot deny traffic
 - **Default**: Deny all inbound, allow all outbound
 - **Best Practice**: Least privilege, reference other SGs
+
+**[📖 Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)** - Control inbound and outbound traffic
 
 ### Network ACLs (NACLs)
 - **Stateless**: Must allow both request and response
@@ -66,6 +76,8 @@
 
 ## VPC Connectivity
 
+**[📖 VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)** - Connect VPCs in a private network
+
 ### VPC Peering
 - Connect two VPCs privately
 - Must have non-overlapping CIDR blocks
@@ -80,7 +92,11 @@
 - Regional resource, can peer cross-region
 - Use Cases: Centralized routing, simplified network management
 
+**[📖 Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)** - Connect VPCs and on-premises networks through a central hub
+
 ### VPC Endpoints
+
+**[📖 VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html)** - Privately connect to AWS services without internet gateway
 
 **Interface Endpoints (PrivateLink)**:
 - ENI with private IP in subnet
@@ -102,6 +118,8 @@
 
 ## Hybrid Connectivity
 
+**[📖 Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)** - Secure connection between on-premises and AWS
+
 ### AWS Site-to-Site VPN
 - Encrypted IPsec tunnels over internet
 - Virtual Private Gateway (VGW) on AWS side
@@ -118,6 +136,8 @@
 - **Setup Time**: Weeks to months
 - Use Cases: Large data transfers, hybrid architectures, regulatory requirements
 
+**[📖 AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)** - Dedicated network connection to AWS
+
 ### Direct Connect + VPN
 - VPN over Direct Connect for encryption
 - Combines benefits of both
@@ -132,7 +152,11 @@
 
 ## Route 53
 
+**[📖 Amazon Route 53 Documentation](https://docs.aws.amazon.com/route53/)** - Scalable DNS and domain name registration
+
 ### Routing Policies
+
+**[📖 Routing Policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)** - Choose how Route 53 responds to DNS queries
 
 **Simple**: Single resource, no health checks
 **Weighted**: Distribute traffic by percentage (A/B testing, gradual migration)

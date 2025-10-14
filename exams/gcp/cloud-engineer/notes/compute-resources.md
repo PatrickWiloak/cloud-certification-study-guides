@@ -4,6 +4,8 @@
 
 This document covers compute services on Google Cloud Platform including Compute Engine, Google Kubernetes Engine (GKE), App Engine, Cloud Functions, and Cloud Run. Understanding when to use each service and how to manage them is crucial for the Associate Cloud Engineer certification.
 
+**[📖 Compute Options Overview](https://cloud.google.com/docs/choosing-a-compute-option)** - Guide to choosing the right compute service for your workload
+
 ## Key Topics
 
 ### 1. Compute Engine
@@ -12,11 +14,15 @@ This document covers compute services on Google Cloud Platform including Compute
 - Multiple machine types and families
 - Preemptible and spot VMs for cost savings
 
+**[📖 Compute Engine Documentation](https://cloud.google.com/compute/docs)** - Complete guide to Google Compute Engine
+
 ### 2. Google Kubernetes Engine (GKE)
 - Managed Kubernetes service
 - Container orchestration at scale
 - Node pools and cluster autoscaling
 - Workload identity and security features
+
+**[📖 GKE Documentation](https://cloud.google.com/kubernetes-engine/docs)** - Managed Kubernetes service documentation
 
 ### 3. App Engine
 - Fully managed platform-as-a-service (PaaS)
@@ -24,17 +30,23 @@ This document covers compute services on Google Cloud Platform including Compute
 - Standard vs. Flexible environments
 - Support for multiple programming languages
 
+**[📖 App Engine Documentation](https://cloud.google.com/appengine/docs)** - Platform-as-a-service documentation
+
 ### 4. Cloud Functions
 - Event-driven serverless compute
 - HTTP and event triggers
 - Lightweight, single-purpose functions
 - Automatic scaling based on load
 
+**[📖 Cloud Functions Documentation](https://cloud.google.com/functions/docs)** - Event-driven serverless functions
+
 ### 5. Cloud Run
 - Fully managed serverless for containers
 - Run containers without managing infrastructure
 - Automatic scaling including scale-to-zero
 - HTTP request-based invocation
+
+**[📖 Cloud Run Documentation](https://cloud.google.com/run/docs)** - Serverless containers platform
 
 ## GCP Services Reference
 
@@ -67,6 +79,10 @@ This document covers compute services on Google Cloud Platform including Compute
 7. **Instance Templates**: Use templates for consistent, repeatable deployments
 8. **Health Checks**: Implement health checks for instance groups and load balancers
 
+**[📖 Machine Types](https://cloud.google.com/compute/docs/machine-types)** - Guide to available machine types and families
+**[📖 Preemptible VMs](https://cloud.google.com/compute/docs/instances/preemptible)** - Cost-effective compute for fault-tolerant workloads
+**[📖 Instance Groups](https://cloud.google.com/compute/docs/instance-groups)** - Managing groups of VM instances
+
 ### GKE Best Practices
 1. **Node Auto-provisioning**: Automatically add node pools based on workload needs
 2. **Workload Identity**: Use GCP service accounts for pod authentication
@@ -77,6 +93,10 @@ This document covers compute services on Google Cloud Platform including Compute
 7. **Pod Security Policies**: Enforce security standards for pods
 8. **Regional Clusters**: Use multi-zone clusters for high availability
 
+**[📖 GKE Best Practices](https://cloud.google.com/kubernetes-engine/docs/best-practices)** - Production-ready GKE configurations
+**[📖 Workload Identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)** - Secure pod authentication with GCP services
+**[📖 Cluster Autoscaling](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler)** - Automatic cluster scaling
+
 ### App Engine Best Practices
 1. **Environment Selection**: Choose Standard for simple apps, Flexible for custom runtimes
 2. **Automatic Scaling**: Configure scaling settings based on traffic patterns
@@ -85,6 +105,9 @@ This document covers compute services on Google Cloud Platform including Compute
 5. **Task Queues**: Offload background work to asynchronous tasks
 6. **Version Management**: Deploy new versions before deleting old ones
 7. **Warmup Requests**: Pre-load application code before serving traffic
+
+**[📖 App Engine Standard vs Flexible](https://cloud.google.com/appengine/docs/the-appengine-environments)** - Choosing the right environment
+**[📖 Scaling in App Engine](https://cloud.google.com/appengine/docs/standard/python3/how-instances-are-managed)** - Instance management and scaling
 
 ### Cloud Functions Best Practices
 1. **Idempotency**: Design functions to handle duplicate events
@@ -103,6 +126,8 @@ This document covers compute services on Google Cloud Platform including Compute
 5. **CPU Allocation**: Choose always-allocated for latency-sensitive apps
 6. **Service Accounts**: Use least-privilege service accounts
 7. **Cloud SQL Connections**: Use Cloud SQL Proxy for database connections
+
+**[📖 Cloud Run Best Practices](https://cloud.google.com/run/docs/tips)** - Optimizing Cloud Run services
 
 ## Common Scenarios
 

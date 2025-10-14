@@ -1,5 +1,8 @@
 # Cloud Engineer Exam Tips and Best Practices - Cloud Engineer
 
+**[📖 Associate Cloud Engineer Certification](https://cloud.google.com/certification/cloud-engineer)** - Official certification page
+**[📖 Exam Guide](https://cloud.google.com/certification/guides/cloud-engineer)** - Detailed exam guide and topics
+
 ## Exam Format
 - **Duration**: 2 hours (120 minutes)
 - **Questions**: 50-60 questions
@@ -142,6 +145,9 @@ Requirement?
 
 ## gcloud Command Patterns
 
+**[📖 gcloud Command Reference](https://cloud.google.com/sdk/gcloud/reference)** - Complete gcloud CLI reference
+**[📖 gcloud Cheat Sheet](https://cloud.google.com/sdk/docs/cheatsheet)** - Quick command reference
+
 ### Configuration
 ```bash
 # Set project
@@ -195,6 +201,9 @@ kubectl apply -f deployment.yaml
 ```
 
 ## Best Practices by Domain
+
+**[📖 Google Cloud Best Practices](https://cloud.google.com/architecture/framework)** - Cloud Architecture Framework
+**[📖 Cost Optimization](https://cloud.google.com/architecture/framework/cost-optimization)** - Cost optimization best practices
 
 ### Compute
 1. Use preemptible VMs for fault-tolerant workloads
@@ -269,6 +278,9 @@ kubectl apply -f deployment.yaml
 - [ ] Familiar with CI/CD with Cloud Build
 - [ ] Know BigQuery basics and Pub/Sub patterns
 - [ ] Understand cost optimization strategies
+
+**[📖 Practice Exam](https://cloud.google.com/certification/practice-exam/cloud-engineer)** - Official practice exam
+**[📖 Training Resources](https://cloud.google.com/training)** - Google Cloud training and certification
 
 ## Final Tips
 

@@ -1,6 +1,10 @@
 # Identity and Governance - AZ-104
 
+**[📖 Azure AD Documentation](https://learn.microsoft.com/en-us/azure/active-directory/)** - Official Azure Active Directory documentation
+
 ## Azure Active Directory Management
+
+**[📖 Manage Users in Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory)** - Learn how to create and manage users in Azure Active Directory
 
 ### User Management
 
@@ -26,6 +30,8 @@ az ad user create --display-name "John Doe" --user-principal-name "john@contoso.
 - **Authentication:** Password policies, MFA settings
 
 ### Group Management
+
+**[📖 Azure AD Groups](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-manage-groups)** - Comprehensive guide to managing groups in Azure AD
 
 #### Group Types
 - **Security Groups:** Manage access to resources
@@ -100,6 +106,8 @@ foreach ($user in $users) {
 
 ### Self-Service Password Reset (SSPR)
 
+**[📖 Deploy Azure AD Self-Service Password Reset](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-deployment)** - Complete deployment guide for SSPR
+
 #### Configuration Requirements
 - Azure AD Premium P1 or P2 license
 - Authentication methods configuration
@@ -121,6 +129,8 @@ foreach ($user in $users) {
 5. Test SSPR functionality
 
 ## Role-Based Access Control (RBAC)
+
+**[📖 Azure RBAC Documentation](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)** - Complete overview of Azure role-based access control
 
 ### RBAC Components
 
@@ -162,6 +172,8 @@ foreach ($user in $users) {
 - Website Contributor
 
 ### Custom Roles
+
+**[📖 Create Custom RBAC Roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles)** - Step-by-step guide to creating custom Azure roles
 
 #### Creating Custom Roles
 ```json
@@ -235,6 +247,8 @@ New-AzureADMSInvitation -InvitedUserEmailAddress "guest@external.com" -InviteRed
 
 ## Subscription and Governance
 
+**[📖 Azure Subscriptions Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)** - Best practices for Azure subscription design
+
 ### Azure Subscriptions
 
 #### Subscription Types
@@ -257,6 +271,8 @@ Select-AzSubscription -SubscriptionId "subscription-id"
 ```
 
 ### Management Groups
+
+**[📖 Management Groups Documentation](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview)** - Organize resources with Azure management groups
 
 #### Hierarchy Structure
 ```
@@ -281,6 +297,8 @@ New-AzManagementGroupSubscription -GroupName "Production" -SubscriptionId "subsc
 ```
 
 ### Azure Policy
+
+**[📖 Azure Policy Documentation](https://learn.microsoft.com/en-us/azure/governance/policy/overview)** - Enforce organizational standards with Azure Policy
 
 #### Policy Structure
 ```json
@@ -326,6 +344,8 @@ New-AzPolicySetDefinition @policySet
 
 ### Resource Locks
 
+**[📖 Lock Resources to Prevent Changes](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)** - Protect resources from accidental deletion or modification
+
 #### Lock Types
 - **ReadOnly:** Authorized users can read but not delete or modify
 - **Delete:** Authorized users can read and modify but not delete
@@ -344,6 +364,8 @@ Remove-AzResourceLock -LockName "DontDelete" -ResourceGroupName "myRG"
 ```
 
 ### Resource Tagging
+
+**[📖 Use Tags to Organize Azure Resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources)** - Best practices for resource tagging and cost management
 
 #### Tagging Strategy
 ```json
@@ -380,6 +402,8 @@ foreach ($resource in $resources) {
 ```
 
 ### Cost Management
+
+**[📖 Azure Cost Management and Billing](https://learn.microsoft.com/en-us/azure/cost-management-billing/)** - Monitor and control Azure spending with cost management tools
 
 #### Cost Analysis Tools
 - **Azure Cost Management + Billing:** Native cost analysis
