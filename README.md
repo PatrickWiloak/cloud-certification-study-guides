@@ -335,11 +335,39 @@ See our [Contributing Guide](./CONTRIBUTING.md) for:
 
 ---
 
-## ⚖️ License & Usage
+## ⚖️ License & Attribution
 
-These materials are provided for **educational purposes** to help individuals prepare for cloud certification exams. All official documentation links point to cloud provider resources.
+### Educational Use & Fair Use Statement
 
-**Disclaimer:** This repository is not affiliated with AWS, Microsoft, Google, Oracle, or IBM. All trademarks belong to their respective owners.
+These materials are provided strictly for **educational purposes** to help individuals study for cloud certification exams. This repository serves as a study guide and educational commentary on cloud technologies, featuring:
+
+- **6,000+ direct links** to official cloud provider documentation
+- Educational summaries and study notes based on publicly available information
+- Original commentary, organization, and study strategies
+- Cross-cloud comparisons to aid understanding
+
+All cloud technologies, services, and technical concepts described herein are the intellectual property of their respective cloud providers. This repository does not claim ownership of any proprietary technologies, trademarks, or service marks.
+
+### Sources & Attribution
+
+All technical information is sourced from and extensively linked to official documentation:
+- **Amazon Web Services (AWS)** - [aws.amazon.com/documentation](https://aws.amazon.com/documentation/)
+- **Microsoft Azure** - [learn.microsoft.com](https://learn.microsoft.com/)
+- **Google Cloud Platform (GCP)** - [cloud.google.com/docs](https://cloud.google.com/docs)
+- **Oracle Cloud Infrastructure (OCI)** - [docs.oracle.com/cloud](https://docs.oracle.com/en-us/iaas/Content/home.htm)
+- **IBM Cloud** - [cloud.ibm.com/docs](https://cloud.ibm.com/docs)
+
+### Disclaimer
+
+This repository is an **independent educational resource** and is not affiliated with, endorsed by, or sponsored by Amazon Web Services, Microsoft, Google, Oracle, IBM, or any of their subsidiaries or affiliates. All product names, logos, brands, trademarks, and registered trademarks are the property of their respective owners.
+
+The certification programs mentioned are offered by their respective cloud providers. Please refer to official certification pages for authoritative exam information and registration.
+
+### License
+
+Original content in this repository (study notes, comparisons, roadmaps, and organizational structure) is provided under the Creative Commons Attribution 4.0 International License (CC BY 4.0). You are free to share and adapt these materials with proper attribution.
+
+Cloud provider documentation and official resources remain under their respective licenses and terms of use.
 
 ---
 
