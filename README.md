@@ -6,7 +6,7 @@
 >
 > 🎥 [@patrickwiloak](https://youtube.com/@patrickwiloak) | 💼 [LinkedIn](https://www.linkedin.com/in/patricklukewilson/)
 
-[![Certifications](https://img.shields.io/badge/Certifications-57-blue.svg)]()
+[![Certifications](https://img.shields.io/badge/Certifications-48-blue.svg)]()
 [![Documentation Links](https://img.shields.io/badge/Documentation%20Links-5000+-green.svg)]()
 [![Cloud Providers](https://img.shields.io/badge/Cloud%20Providers-5-orange.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
