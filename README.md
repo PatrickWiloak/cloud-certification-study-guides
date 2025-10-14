@@ -9,7 +9,7 @@
 [![Certifications](https://img.shields.io/badge/Certifications-48-blue.svg)]()
 [![Documentation Links](https://img.shields.io/badge/Documentation%20Links-5000+-green.svg)]()
 [![Cloud Providers](https://img.shields.io/badge/Cloud%20Providers-5-orange.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-green.svg)](./LICENSE)
 
 ---
 
