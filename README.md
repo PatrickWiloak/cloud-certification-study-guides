@@ -383,7 +383,7 @@ If these materials helped you pass a certification or advance your career, pleas
 
 Created and maintained by **[Patrick Wiloak](https://patrickwiloak.com)**
 
-**Ex-AWS Solutions Architect** | **10 Years in Tech** | **12 Cloud Certifications** (10 AWS + more)
+**16x Multi Cloud Certified** | **Prev @ AWS** | **11x AWS Certified** | **3x GCP** | **2x Azure**
 
 I created this repository while preparing for additional certifications, and I'm sharing it so we can study together! Whether you're starting your cloud journey or pursuing advanced certifications, these materials will help you succeed.
 
