@@ -239,7 +239,6 @@ Study the detailed **notes/** files for each topic:
 - ✅ YouTube videos and community forums
 
 ### **Paid Recommendations** (Optional)
-- 💵 Official practice exams ($20-40) - **Highly recommended**
 - 💵 Video courses ($15-50) - Udemy, A Cloud Guru, Linux Academy
 - 💵 Third-party practice tests ($15-30) - Tutorials Dojo, Whizlabs
 
