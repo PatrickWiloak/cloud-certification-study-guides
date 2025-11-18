@@ -33,7 +33,7 @@ This repository contains **the most comprehensive, multi-cloud certification stu
 Start here: **[📚 Study Hub](./STUDY-HUB.md)** - Your one-stop guide to certification success
 
 ### **Want Expert Study Strategies?**
-Read: **[📝 How to Study and Pass Cloud Certifications (2025 Edition)](https://patrickwiloak.com/blog/how-to-study-and-pass-cloud-certifications-2025-edition)** - Proven techniques from my certification journey
+Read: **[📝 How to Study and Pass Cloud Certifications (2025 Edition)](https://patrickwiloak.com/blog/aws-certification-study-framework-how-to-prepare-pass-certifications)** - Proven techniques from my certification journey
 
 ### **Know What You Want?**
 Jump directly to your certification:
@@ -119,7 +119,7 @@ Compare equivalent services across cloud providers:
 - **[💰 Free Tier Guides](./resources/free-tier-guide.md)** - Study without breaking the bank
 - **[📝 Study Tips & Strategies](./resources/study-strategies.md)** - Proven study techniques
 - **[✅ Exam Day Checklist](./resources/exam-day-checklist.md)** - Be prepared for test day
-- **[📖 Complete Study Guide (Blog)](https://patrickwiloak.com/blog/how-to-study-and-pass-cloud-certifications-2025-edition)** - Comprehensive guide with proven strategies
+- **[📖 Complete Study Guide (Blog)](https://patrickwiloak.com/blog/aws-certification-study-framework-how-to-prepare-pass-certifications)** - Comprehensive guide with proven strategies
 
 ---
 
@@ -390,7 +390,7 @@ I created this repository while preparing for additional certifications, and I'm
 
 **Connect with me:**
 - 🎥 **[YouTube: @patrickwiloak](https://youtube.com/@patrickwiloak)** - Cloud certification tips and tutorials
-- 📝 **[Blog: Study Guide 2025](https://patrickwiloak.com/blog/how-to-study-and-pass-cloud-certifications-2025-edition)** - Proven study strategies
+- 📝 **[Blog: Study Guide 2025](https://patrickwiloak.com/blog/aws-certification-study-framework-how-to-prepare-pass-certifications)** - Proven study strategies
 - 💼 **[LinkedIn: Patrick Luke Wilson](https://www.linkedin.com/in/patricklukewilson/)** - Let's connect!
 - 🌐 **[Portfolio: patrickwiloak.com](https://patrickwiloak.com)** - More of my work
 
