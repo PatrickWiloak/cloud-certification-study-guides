@@ -388,10 +388,11 @@ Created and maintained by **[Patrick Wiloak](https://patrickwiloak.com)**
 I created this repository while preparing for additional certifications, and I'm sharing it so we can study together! Whether you're starting your cloud journey or pursuing advanced certifications, these materials will help you succeed.
 
 **Connect with me:**
-- 🎥 **[YouTube: @patrickwiloak](https://youtube.com/@patrickwiloak)** - Cloud certification tips and tutorials
-- 📝 **[Blog: Study Guide 2025](https://patrickwiloak.com/blog/aws-certification-study-framework-how-to-prepare-pass-certifications)** - Proven study strategies
-- 💼 **[LinkedIn: Patrick Luke Wilson](https://www.linkedin.com/in/patricklukewilson/)** - Let's connect!
-- 🌐 **[Portfolio: patrickwiloak.com](https://patrickwiloak.com)** - More of my work
+
+🎥 **[YouTube: @patrickwiloak](https://youtube.com/@patrickwiloak)** - Cloud certification tips and tutorials
+📝 **[Blog: Study Guide 2025](https://patrickwiloak.com/blog/aws-certification-study-framework-how-to-prepare-pass-certifications)** - Proven study strategies
+💼 **[LinkedIn: Patrick Luke Wilson](https://www.linkedin.com/in/patricklukewilson/)** - Let's connect!
+🌐 **[Portfolio: patrickwiloak.com](https://patrickwiloak.com)** - More of my work
 
 *Let's study together and pass these certifications!* 🚀
 
