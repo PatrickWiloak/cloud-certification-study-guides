@@ -369,6 +369,26 @@ For detailed information on courses, practice tests, hands-on labs, communities,
 - **[AWS Documentation](https://docs.aws.amazon.com/)** - Complete service documentation
 - **[AWS Free Tier](https://aws.amazon.com/free/)** - 12 months free + always-free services
 
+## Free Hands-On Labs
+
+Practice with real AWS environments using these free resources:
+
+### Official AWS Labs
+- **[AWS Skill Builder Labs](https://skillbuilder.aws/search?searchText=&learningTypes%5B%5D=lab)** - Official hands-on labs (free tier)
+- **[AWS Workshops](https://workshops.aws/)** - Self-paced workshops covering all major services
+- **[AWS Well-Architected Labs](https://wellarchitectedlabs.com/)** - Architecture-focused practical exercises
+
+### Free Tier Practice
+- **[AWS Free Tier](https://aws.amazon.com/free/)** - 12 months free + always-free services
+- Use free tier to build real architectures from this study plan
+- Set up billing alerts to avoid unexpected charges
+
+### Community Labs
+- **[AWS Samples on GitHub](https://github.com/aws-samples)** - Reference architectures and code
+- **[Serverless Land](https://serverlessland.com/)** - Serverless patterns and tutorials
+
+---
+
 ## Final Exam Checklist
 
 ### One Week Before

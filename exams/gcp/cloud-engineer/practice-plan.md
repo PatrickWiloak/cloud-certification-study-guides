@@ -295,6 +295,27 @@ kubectl scale deployment DEPLOYMENT_NAME --replicas=3
 kubectl rollout status deployment DEPLOYMENT_NAME
 ```
 
+## Free Hands-On Labs
+
+Practice with real GCP environments using these free resources:
+
+### Official Google Cloud Labs
+- **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)** - Official labs and quests (some free)
+- **[Cloud Engineer Learning Path](https://www.cloudskillsboost.google/paths/11)** - Structured learning with labs
+- **[Google Cloud Console](https://console.cloud.google.com/)** - Hands-on practice with real services
+
+### Free GCP Resources
+- **[GCP Free Tier](https://cloud.google.com/free)** - $300 credit for 90 days + always-free tier
+- **[Qwiklabs Free Labs](https://www.cloudskillsboost.google/catalog?price%5B%5D=free)** - Search for free labs
+- **[Google Cloud for Students](https://cloud.google.com/edu/students)** - Academic credits and resources
+
+### Practice Resources
+- **[GitHub Google Cloud Samples](https://github.com/GoogleCloudPlatform)** - Reference architectures and code
+- **[Codelabs](https://codelabs.developers.google.com/?cat=Cloud)** - Step-by-step tutorials
+- **[Cloud Architecture Center](https://cloud.google.com/architecture)** - Reference architectures
+
+---
+
 ## Success Metrics
 
 ### Weekly Targets

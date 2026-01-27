@@ -1,10 +1,10 @@
 # 📚 Study Hub - Your Cloud Certification Navigation Center
 
-> **Your comprehensive guide to navigating 48+ cloud certifications across AWS, Azure, GCP, Oracle, and IBM**
+> **Your comprehensive guide to navigating 56 cloud certifications across AWS, Azure, GCP, Oracle, and IBM**
 
 <div align="center">
 
-[![Total Certifications](https://img.shields.io/badge/Certifications-48+-blue.svg)]()
+[![Total Certifications](https://img.shields.io/badge/Certifications-56-blue.svg)]()
 [![Documentation Links](https://img.shields.io/badge/Docs%20Links-6000+-green.svg)]()
 [![Cloud Providers](https://img.shields.io/badge/Cloud%20Providers-5-orange.svg)]()
 [![Study Paths](https://img.shields.io/badge/Study%20Paths-6-purple.svg)]()
@@ -1237,7 +1237,7 @@ GCP:      $1,850
 Oracle:   $1,130
 IBM:      $1,000
 ──────────────────
-TOTAL:    $9,405 (for all 48+ certifications)
+TOTAL:    $9,405 (for all 56 certifications)
 ```
 
 ### Budget-Friendly Paths

@@ -340,6 +340,27 @@ If you only have 4 weeks:
 
 Focus on hands-on practice and official Microsoft Learn content for maximum efficiency.
 
+## Free Hands-On Labs
+
+Practice with real Azure environments using these free resources:
+
+### Official Microsoft Labs
+- **[Microsoft Learn Sandbox](https://learn.microsoft.com/en-us/training/browse/)** - Free Azure sandbox environments
+- **[AZ-104 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/az-104)** - Official learning path with labs
+- **[Azure Portal](https://portal.azure.com/)** - Hands-on practice with real services
+
+### Free Azure Resources
+- **[Azure Free Account](https://azure.microsoft.com/free/)** - $200 credit for 30 days + 12 months free services
+- **[Azure for Students](https://azure.microsoft.com/free/students/)** - $100 credit + free services
+- **[Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)** - Monthly Azure credits
+
+### Practice Labs
+- **[Azure Citadel](https://azurecitadel.com/)** - Community-driven labs and workshops
+- **[GitHub Azure Samples](https://github.com/Azure-Samples)** - Reference architectures and code
+- **[Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)** - ARM template examples
+
+---
+
 ## Final Exam Tips
 
 ### Day Before Exam

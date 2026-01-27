@@ -2,11 +2,11 @@
 
 > **Comprehensive, documentation-rich study materials for cloud certifications across AWS, GCP, Azure, Oracle, and IBM**
 >
-> Created by [Patrick Wiloak](https://patrickwiloak.com) - Ex-AWS Solutions Architect | 10 Years in Tech | 12 Cloud Certifications
+> Created by [Patrick Wiloak](https://patrickwiloak.com) - Ex-AWS Solutions Architect | 10 Years in Tech | 16 Cloud Certifications
 >
 > 🎥 [@patrickwiloak](https://youtube.com/@patrickwiloak) | 💼 [LinkedIn](https://www.linkedin.com/in/patricklukewilson/)
 
-[![Certifications](https://img.shields.io/badge/Certifications-48-blue.svg)]()
+[![Certifications](https://img.shields.io/badge/Certifications-56-blue.svg)]()
 [![Documentation Links](https://img.shields.io/badge/Documentation%20Links-5000+-green.svg)]()
 [![Cloud Providers](https://img.shields.io/badge/Cloud%20Providers-5-orange.svg)]()
 [![Free to Use](https://img.shields.io/badge/Free%20to%20Use-Educational-green.svg)]()
@@ -17,7 +17,7 @@
 
 This repository contains **the most comprehensive, multi-cloud certification study materials available**, featuring:
 
-- ✅ **48+ certification fact sheets** with 6,000+ embedded documentation links
+- ✅ **56 certification fact sheets** with 6,000+ embedded documentation links
 - ✅ **Detailed study notes** for every major certification
 - ✅ **Cross-cloud service comparison guides** (AWS vs GCP vs Azure)
 - ✅ **CLI command references** for hands-on practice
@@ -264,8 +264,8 @@ Study the detailed **notes/** files for each topic:
 
 ## 📊 Repository Statistics
 
-- **Total Certifications Covered:** 48+
-- **Total Fact Sheets:** 48
+- **Total Certifications Covered:** 56
+- **Total Fact Sheets:** 56
 - **Total Documentation Links:** 6,000+
 - **Total Lines of Content:** 25,000+
 - **Cloud Providers:** 5 (AWS, Azure, GCP, Oracle, IBM)

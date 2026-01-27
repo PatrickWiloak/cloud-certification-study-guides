@@ -172,6 +172,28 @@ For detailed information on courses, practice tests, hands-on labs, communities,
 - [ ] Week 3 end: Score 70%+ on practice exams
 - [ ] Week 4 end: Score 80%+ on practice exams consistently
 
+## Free Hands-On Labs
+
+Practice with real AWS environments using these free resources:
+
+### Official AWS Labs
+- **[AWS Skill Builder Labs](https://skillbuilder.aws/search?searchText=&learningTypes%5B%5D=lab)** - Official hands-on labs (free tier)
+- **[AWS Cloud Quest](https://aws.amazon.com/training/digital/aws-cloud-quest/)** - Gamified learning experience
+- **[AWS Educate](https://aws.amazon.com/education/awseducate/)** - Free courses for beginners
+
+### Getting Started Resources
+- **[AWS Getting Started Resource Center](https://aws.amazon.com/getting-started/)** - Tutorials and guides
+- **[10-Minute Tutorials](https://aws.amazon.com/getting-started/hands-on/)** - Quick hands-on exercises
+- **[AWS Free Tier](https://aws.amazon.com/free/)** - 12 months free + always-free services
+
+### Explore the Console
+- Create a free AWS account and explore the Management Console
+- Try launching an EC2 instance (free tier eligible)
+- Create an S3 bucket and upload files
+- Explore IAM and create users/roles
+
+---
+
 ## Final Exam Checklist
 
 ### One Week Before

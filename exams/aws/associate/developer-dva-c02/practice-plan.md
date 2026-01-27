@@ -305,6 +305,28 @@ For detailed information on courses, practice tests, hands-on labs, communities,
 - Performance optimization techniques
 - Cost optimization strategies
 
+## Free Hands-On Labs
+
+Practice with real AWS environments using these free resources:
+
+### Official AWS Labs
+- **[AWS Skill Builder Labs](https://skillbuilder.aws/search?searchText=&learningTypes%5B%5D=lab)** - Official hands-on labs (free tier)
+- **[AWS Workshops](https://workshops.aws/)** - Self-paced workshops covering all major services
+- **[Serverless Land](https://serverlessland.com/)** - Serverless patterns and tutorials
+
+### Developer-Focused Resources
+- **[AWS Samples on GitHub](https://github.com/aws-samples)** - Reference code and architectures
+- **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** - SDK code samples
+- **[AWS CDK Workshop](https://cdkworkshop.com/)** - Infrastructure as code with CDK
+
+### Free Tier Practice
+- **[AWS Free Tier](https://aws.amazon.com/free/)** - 12 months free + always-free services
+- Lambda: 1M free requests/month (always free)
+- DynamoDB: 25GB storage + 25 WCU/RCU (always free)
+- API Gateway: 1M API calls/month free for 12 months
+
+---
+
 ## Final Exam Checklist
 
 ### Technical Preparation
